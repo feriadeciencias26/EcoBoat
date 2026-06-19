@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoBoat Suquía| Un Problema Ambiental</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoBoat Suquía | Un Problema Ambiental</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+  <!-- Header -->
   <header class="page-header">
     <div class="container page-header__inner">
-      <a href="index.html" class="brand"> EcoBoat Suquía</a>
-      <button id="menuToggle" class="burger" aria-label="Abrir menú">☰</button>
+
+      <a href="index.html" class="brand">EcoBoat Suquía</a>
+
+      <button id="menuToggle" class="burger" aria-label="Abrir menú">
+        ☰
+      </button>
+
       <nav id="navLinks" class="nav" aria-label="Navegación principal">
         <a href="index.html" class="nav__link">Inicio</a>
         <a href="contexto.html" class="nav__link">Contexto</a>
@@ -22,14 +34,173 @@
         <a href="energia.html" class="nav__link">Energía</a>
         <a href="impacto.html" class="nav__link">Impacto</a>
       </nav>
+
     </div>
   </header>
 
   <main>
+
+    <!-- Hero -->
     <section class="hero">
+
       <div class="container hero__grid">
+
         <div class="hero__copy">
-          <span class="hero__eyebrow">El Problema - ¿Por qué es un Problema? </span>
+
+          <span class="hero__eyebrow">
+            El Problema · ¿Por qué es un problema?
+          </span>
+
+          <h1 class="hero__title">
+            Suquía Renace
+          </h1>
+
+          <p class="hero__text">
+            El río Suquía enfrenta una creciente acumulación de residuos sólidos,
+            principalmente plásticos, botellas, bolsas y otros desechos flotantes.
+            Estos residuos deterioran la calidad del agua, afectan a la fauna y flora
+            acuática y generan un impacto negativo en el ambiente y en la comunidad.
+            <br><br>
+            La limpieza manual resulta costosa, requiere mucho tiempo y no siempre
+            puede realizarse de forma continua. Por ello, es necesario implementar
+            soluciones innovadoras, sostenibles y eficientes que ayuden a mantener
+            el río limpio.
+          </p>
+
+        </div>
+
+        <div class="hero__visual">
+          <img
+            src="assets/img/hero-boat.svg"
+            alt="Ilustración de barco solar autónomo limpiando un río">
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Actuar -->
+    <section class="section">
+
+      <div class="container">
+
+        <h2 class="section__title">
+          ¿Por qué actuar ahora?
+        </h2>
+
+        <p class="section__text">
+          La contaminación de los ríos es un problema que aumenta con el paso del
+          tiempo. Cada botella, bolsa o envase que permanece en el agua puede tardar
+          años en degradarse y seguir afectando al ecosistema durante todo ese período.
+          <br><br>
+          Actuar hoy significa evitar que los residuos continúen acumulándose,
+          proteger la fauna y flora del río Suquía y contribuir a un ambiente más
+          saludable para las generaciones futuras. La incorporación de tecnologías
+          sostenibles, como un barco impulsado por energía solar, demuestra que es
+          posible combinar innovación y compromiso ambiental para generar un impacto
+          positivo en la comunidad.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- Consecuencias -->
+    <section class="section" style="background: var(--surface-alt);">
+
+      <div class="container">
+
+        <h2 class="section__title">
+          ¿Qué consecuencias genera?
+        </h2>
+
+        <div class="cards">
+
+          <article class="card">
+            <div class="card__icon">🌊</div>
+
+            <h3 class="card__title">
+              Contaminación del agua
+            </h3>
+
+            <p class="card__body">
+              Los residuos alteran la calidad del agua y favorecen la acumulación de contaminantes.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🐟</div>
+
+            <h3 class="card__title">
+              Daño a la biodiversidad
+            </h3>
+
+            <p class="card__body">
+              Peces, aves y otros animales pueden ingerir plásticos o quedar atrapados entre los residuos.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">💰</div>
+
+            <h3 class="card__title">
+              Alto costo de limpieza
+            </h3>
+
+            <p class="card__body">
+              Los métodos tradicionales requieren personal, tiempo y recursos económicos para mantener el río en condiciones.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h4>Explorar</h4>
+
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="problema.html">Problema</a></li>
+          <li><a href="solucion.html">Solución</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer-section">
+
+        <h4>Aprender</h4>
+
+        <ul>
+          <li><a href="investigacion.html">Investigación</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; Feria de Ciencias 2026 - Instituto Privado Nuestra Señora del Rosario del Milagro.</p>
+    </div>
+
+  </footer>
+
+  <script src="data.js"></script>
+
+</body>
+</html>roblema? </span>
           <h1 class="hero__title">Suquía Renace</h1>
           <p class="hero__text">El río Suquía enfrenta una creciente acumulación de residuos sólidos, principalmente plásticos, botellas, bolsas y otros desechos flotantes. Estos residuos deterioran la calidad del agua, afectan a la fauna y flora acuática y generan un impacto negativo en el ambiente y en la comunidad.
             
