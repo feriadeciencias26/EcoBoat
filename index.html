@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoBoat Suquía | Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="min-h-screen bg-surface text-slate-900">
+    <header class="glass-nav fixed inset-x-0 top-0 z-50">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="index.html" class="flex items-center gap-3 text-base font-semibold text-primary">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary text-white shadow-lg shadow-primary/20">E</span>
+          EcoBoat Suquía
+        </a>
+       <!-- Botón de menú corregido -->
+        <button id="menu-toggle" class="inline-flex items-center justify-center rounded-full bg-white/90 p-2 text-slate-800 shadow-sm shadow-slate-200 ring-1 ring-slate-200 block md:hidden">
+          <span class="sr-only">Abrir menú</span>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        <nav id="nav-menu" class="hidden sm:flex sm:items-center sm:gap-6">
+          <a href="index.html" class="text-sm font-medium text-slate-700 hover:text-primary">Inicio</a>
+          <a href="problema.html" class="text-sm font-medium text-slate-700 hover:text-primary">Problema</a>
+          <a href="solucion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Solución</a>
+          <a href="investigacion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Investigación</a>
+          <a href="impacto.html" class="text-sm font-medium text-slate-700 hover:text-primary">Impacto</a>
+          <a href="galeria.html" class="text-sm font-medium text-slate-700 hover:text-primary">Galería</a>
+          <a href="acerca.html" class="text-sm font-medium text-slate-700 hover:text-primary">Acerca</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pt-24">
+      <section class="hero-bg overflow-hidden py-20 sm:py-28">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div class="space-y-8">
+              <p class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-secondary">Barco Solar Recolector de Residuos</p>
+              <div class="space-y-5">
+                <h1 class="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">EcoBoat Suquía</h1>
+                <p class="max-w-2xl text-lg leading-8 text-slate-700">Proyecto de la Feria de Ciencias en Jesús María, Córdoba, que propone un sistema solar autónomo para limpiar el Río Suquía y reducir la contaminación de residuos sólidos urbanos.</p>
+              </div>
+              <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+                <a href="problema.html" class="btn-primary">Ver el desafío</a>
+                <a href="impacto.html" class="btn-secondary">Impacto y datos</a>
+              </div>
+            </div>
+            <div class="relative flex items-center justify-center">
+              <div class="pointer-events-none absolute inset-0 rounded-[2rem] bg-gradient-to-br from-secondary/10 via-transparent to-primary/10 blur-2xl"></div>
+              <div class="relative z-10 w-full max-w-xl overflow-hidden rounded-[2rem] border border-slate-200 bg-white/90 shadow-2xl shadow-slate-200/40">
+                <div class="hero-card relative h-[420px]">
+                  <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80" alt="Barco solar en el río" />
+                  <div class="image-overlay"></div>
+                  <div class="hero-card-caption">Modelo EcoBoat Suquía navegando y recolectando residuos con energía solar.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-3">
+          <article class="blueprint-card rounded-3xl p-8">
+            <span class="badge-soft mb-4 inline-flex rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]">Problema</span>
+            <h2 class="text-2xl font-semibold text-slate-950">Contaminación del Suquía</h2>
+            <p class="mt-4 text-slate-600">Residuos plásticos, envases y desechos urbanos invaden el cauce, afectando fauna acuática y generando riesgos sanitarios.</p>
+          </article>
+          <article class="blueprint-card rounded-3xl p-8">
+            <span class="badge-strong mb-4 inline-flex rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]">Solución</span>
+            <h2 class="text-2xl font-semibold text-slate-950">Barco Solar Autónomo</h2>
+            <p class="mt-4 text-slate-600">Plataforma flotante con paneles solares, cinta recolectora y sensores IoT para capturar basura sin emisiones y proteger el ecosistema.</p>
+          </article>
+          <article class="blueprint-card rounded-3xl p-8">
+            <span class="badge-soft mb-4 inline-flex rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]">Impacto</span>
+            <h2 class="text-2xl font-semibold text-slate-950">Educación y ambiente</h2>
+            <p class="mt-4 text-slate-600">Feria de Ciencias 2026, concientización local, innovación sustentable y propuesta replicable para cuencas urbanas del interior cordobés.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="bg-surface2 py-16 sm:py-20">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-10 lg:grid-cols-[1.3fr_1fr] lg:items-center">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.3em] text-secondary">Explora desde tu celular</p>
+              <h2 class="mt-4 text-3xl font-semibold text-slate-950">Escanea el QR para ver el proyecto.</h2>
+              <p class="mt-4 text-slate-600">Utiliza el código simulado para presentar la idea ante el jurado y mostrar cómo un barco solar puede limpiar el Río Suquía con impacto social y ambiental.</p>
+              <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+<a href="galeria.html" class="inline-flex items-center justify-center rounded-full bg-[#005d90] px-6 py-3 text-sm font-bold text-white shadow-lg shadow-[#005d90]/20 hover:bg-[#0077b6] transition-all transform hover:-translate-y-0.5">Ver galería</a>                <a href="acerca.html" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 hover:border-secondary hover:text-secondary">Conocer al equipo</a>
+              </div>
+            </div>
+            <div class="mx-auto w-full max-w-xs rounded-4xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/50">
+              <div class="flex items-center justify-between rounded-3xl bg-slate-950 px-4 py-3 text-white">
+                <span class="font-semibold">EcoBoat Suquía</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-slate-300">QR</span>
+              </div>
+              <div class="mt-6 grid grid-cols-3 gap-2 rounded-3xl bg-slate-100 p-4">
+                <div class="h-16 w-16 rounded-2xl bg-slate-900"></div>
+                <div class="h-16 w-16 rounded-2xl bg-slate-300"></div>
+                <div class="h-16 w-16 rounded-2xl bg-slate-900"></div>
+                <div class="h-16 w-16 rounded-2xl bg-slate-300"></div>
+                <div class="h-16 w-16 rounded-2xl bg-slate-900"></div>
+                <div class="h-16 w-16 rounded-2xl bg-slate-300"></div>
+                <div class="h-16 w-16 rounded-2xl bg-slate-300"></div>
+                <div class="h-16 w-16 rounded-2xl bg-slate-900"></div>
+                <div class="h-16 w-16 rounded-2xl bg-slate-300"></div>
+              </div>
+              <p class="mt-6 text-sm text-slate-600">Simulación del código QR para presentar el informe técnico y facilitar la navegación móvil en la feria.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+ 
+  <!-- Footer -->
+  <footer>
+    <footer class="main-footer"></footer>
+    <div class="footer-bottom"></div>
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="problema.html">Problema</a></li>
+          <li><a href="solucion.html">Solución</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Aprender</h4>
+        <ul>
+          <li><a href="investigacion.html">Investigación</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; Feria de Ciencias 2026 - Instituto Privado Nuestra Señora del Rosario del Milagro.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+</body>
+</html>

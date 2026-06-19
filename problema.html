@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoBoat Suquía | El Desafío Ambiental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="min-h-screen bg-surface text-slate-900">
+    <header class="glass-nav fixed inset-x-0 top-0 z-50">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="index.html" class="flex items-center gap-3 text-base font-semibold text-primary">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary text-white">E</span>
+          EcoBoat Suquía
+        </a>
+        <button id="menu-toggle" class="inline-flex items-center justify-center rounded-full bg-white/90 p-2 text-slate-700 shadow-sm shadow-slate-200 ring-1 ring-slate-200 sm:hidden">
+          <span class="sr-only">Abrir menú</span>
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <nav id="nav-menu" class="hidden sm:flex sm:items-center sm:gap-6">
+          <a href="index.html" class="text-sm font-medium text-slate-700 hover:text-primary">Inicio</a>
+          <a href="problema.html" class="text-sm font-medium text-slate-700 hover:text-primary">Problema</a>
+          <a href="solucion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Solución</a>
+          <a href="investigacion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Investigación</a>
+          <a href="impacto.html" class="text-sm font-medium text-slate-700 hover:text-primary">Impacto</a>
+          <a href="galeria.html" class="text-sm font-medium text-slate-700 hover:text-primary">Galería</a>
+          <a href="acerca.html" class="text-sm font-medium text-slate-700 hover:text-primary">Acerca</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pt-24">
+      <section class="bg-surface2 py-20">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+            <div class="space-y-6">
+              <p class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">Desafío Ambiental</p>
+              <h1 class="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">El contexto crítico del Río Suquía</h1>
+              <p class="max-w-2xl text-lg leading-8 text-slate-700">El río Suquía es una arteria natural de Jesús María. El aumento de residuos sólidos urbanos en sus márgenes obliga a una solución que combine tecnología limpia, monitoreo ambiental y cuidado comunitario.</p>
+            </div>
+            <div class="rounded-4xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40">
+              <h2 class="text-xl font-semibold text-slate-950">Resumen del problema</h2>
+              <p class="mt-4 text-slate-600">Residuos plásticos, bolsas, envases y desechos domésticos reducen la calidad del agua y amenazan la biodiversidad del Suquía.</p>
+              <ul class="mt-6 space-y-3 text-slate-700">
+                <li class="flex gap-3"><span class="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-primary"></span>Obstrucción de corredores de pesca y reproducción.</li>
+                <li class="flex gap-3"><span class="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-primary"></span>Alimentación de fauna con materiales tóxicos y pérdida de hábitat.</li>
+                <li class="flex gap-3"><span class="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-primary"></span>Erosión de ecosistemas ribereños y degradación de vegetación nativa.</li>
+                <li class="flex gap-3"><span class="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-primary"></span>Riesgos sanitarios por vectores, infecciones y malos olores.</li>
+                <li class="flex gap-3"><span class="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-primary"></span>Impacto en el turismo verde y en la percepción ambiental de la ciudad.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2">
+          <div class="blueprint-card rounded-3xl p-8">
+            <h2 class="section-title text-2xl font-semibold text-slate-950">Pregunta de Investigación</h2>
+            <p class="mt-4 text-slate-700">¿Puede un barco solar recolector de residuos reducir la contaminación del Río Suquía sin generar emisiones de CO2 y sin afectar la fauna acuática local?</p>
+            <div class="mt-6 rounded-3xl bg-slate-100 p-6 text-slate-700">
+              <p class="font-semibold text-slate-900">Objetivos</p>
+              <ul class="mt-3 space-y-3 list-disc pl-5">
+                <li>Analizar la eficiencia de la recolección con energía solar.</li>
+                <li>Evaluar el impacto en especies y vegetación ribereña.</li>
+                <li>Comparar costos ambientales frente a métodos tradicionales.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="blueprint-card rounded-3xl p-8">
+            <h2 class="section-title text-2xl font-semibold text-slate-950">Hipótesis</h2>
+            <p class="mt-4 text-slate-700">Si se implementa un sistema flotante con paneles solares, batería Li-ion y cinta transportadora de residuos, entonces se podrá recolectar basura del río de forma continua y con menor huella de carbono que los métodos basados en motores de combustión.</p>
+            <div class="mt-6 rounded-3xl bg-slate-100 p-6 text-slate-700">
+              <p class="font-semibold text-slate-900">Criterios de éxito</p>
+              <ol class="mt-3 list-decimal space-y-3 pl-5">
+                <li>Reducción del volumen de residuos flotantes en zonas críticas.</li>
+                <li>Operación sin emisiones directas.</li>
+                <li>Preservación de fauna y flora acuática.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[radial-gradient(circle_at_top_left,_rgba(0,93,144,0.14),transparent_25%),radial-gradient(circle_at_bottom_right,_rgba(44,105,78,0.14),transparent_22%),#f8f9fa] py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-10 lg:grid-cols-2">
+            <div class="space-y-6 rounded-4xl border border-slate-200 bg-white p-10 shadow-xl shadow-slate-200/40">
+              <h2 class="text-3xl font-semibold text-slate-950">Métodos actuales vs. propuesta limpia</h2>
+              <p class="text-slate-700">Los métodos tradicionales de limpieza del río dependen de embarcaciones con motores diesel y cuadrillas de extracción manual, lo que aumenta costos de combustible, emisiones de CO2 y perturbación del entorno.</p>
+            </div>
+            <div class="space-y-6">
+              <div class="blueprint-card rounded-3xl p-8">
+                <h3 class="text-xl font-semibold text-slate-950">Métodos actuales</h3>
+                <ul class="mt-4 space-y-3 text-slate-700 list-disc pl-5">
+                  <li>Uso de lanchas o camiones con motores de combustión.</li>
+                  <li>Emisiones directas de dióxido de carbono y partículas.</li>
+                  <li>Recambio frecuente de combustible y mayor costo operativo.</li>
+                  <li>Intervención ruidosa que altera vida silvestre.</li>
+                </ul>
+              </div>
+              <div class="blueprint-card rounded-3xl p-8">
+                <h3 class="text-xl font-semibold text-slate-950">Nuestra propuesta</h3>
+                <ul class="mt-4 space-y-3 text-slate-700 list-disc pl-5">
+                  <li>Barco solar con paneles fotovoltaicos y batería Li-ion.</li>
+                  <li>Operación silenciosa y sin emisiones locales.</li>
+                  <li>Recolección continua mediante cinta transportadora.</li>
+                  <li>Monitoreo remoto para optimizar recorridos y mantenimiento.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 rounded-4xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40">
+            <h2 class="text-2xl font-semibold text-slate-950">Ventajas ambientales y comunitarias</h2>
+            <div class="mt-6 grid gap-6 sm:grid-cols-2">
+              <div class="rounded-3xl bg-secondary-container p-5 text-secondary">
+                <p class="font-semibold">Reduce CO2</p>
+                <p class="mt-3 text-sm">No depende de combustibles fósiles para las labores de limpieza.</p>
+              </div>
+              <div class="rounded-3xl bg-primary-container/10 p-5 text-primary">
+                <p class="font-semibold">Protege fauna acuática</p>
+                <p class="mt-3 text-sm">Diseño que evita daños a peces, aves y vegetación ribereña.</p>
+              </div>
+              <div class="rounded-3xl bg-slate-100 p-5 text-slate-700">
+                <p class="font-semibold">Ahorro operativo</p>
+                <p class="mt-3 text-sm">Menor costo a largo plazo frente a desplazamientos con combustible.</p>
+              </div>
+              <div class="rounded-3xl bg-slate-100 p-5 text-slate-700">
+                <p class="font-semibold">Concientización local</p>
+                <p class="mt-3 text-sm">Impulsa la educación ambiental en Jesús María.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+      <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="archive.html">Archive</a></li>
+          <li><a href="daily-idea.html">Daily Idea</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="about.html">About This Project</a></li>
+          <li><a href="donate.html">Support Us</a></li>
+          <li><a href="index.html#">Privacy</a></li>
+          <li><a href="index.html#">Terms</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="daily-idea.html">Explore Today</a></li>
+          <li><a href="categories.html">By Discipline</a></li>
+          <li><a href="archive.html">Browse All</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 One Day, One New Knowledge. A passion project dedicated to curiosity and learning.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+</body>
+</html>
+
+
+

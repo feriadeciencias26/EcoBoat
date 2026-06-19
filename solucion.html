@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoBoat Suquía | Arquitectura y Funcionamiento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="min-h-screen bg-surface text-slate-900">
+    <header class="glass-nav fixed inset-x-0 top-0 z-50">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="index.html" class="flex items-center gap-3 text-base font-semibold text-primary">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary text-white">E</span>
+          EcoBoat Suquía
+        </a>
+        <button id="menu-toggle" class="inline-flex items-center justify-center rounded-full bg-white/90 p-2 text-slate-700 shadow-sm shadow-slate-200 ring-1 ring-slate-200 sm:hidden">
+          <span class="sr-only">Abrir menú</span>
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <nav id="nav-menu" class="hidden sm:flex sm:items-center sm:gap-6">
+          <a href="index.html" class="text-sm font-medium text-slate-700 hover:text-primary">Inicio</a>
+          <a href="problema.html" class="text-sm font-medium text-slate-700 hover:text-primary">Problema</a>
+          <a href="solucion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Solución</a>
+          <a href="investigacion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Investigación</a>
+          <a href="impacto.html" class="text-sm font-medium text-slate-700 hover:text-primary">Impacto</a>
+          <a href="galeria.html" class="text-sm font-medium text-slate-700 hover:text-primary">Galería</a>
+          <a href="acerca.html" class="text-sm font-medium text-slate-700 hover:text-primary">Acerca</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pt-24">
+      <section class="bg-surface2 py-20">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+            <div class="space-y-6">
+              <p class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">Arquitectura</p>
+              <h1 class="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">Diseño tecnológico eficiente</h1>
+              <p class="max-w-2xl text-lg leading-8 text-slate-700">EcoBoat Suquía combina captación solar, almacenamiento inteligente y sistemas de recolección para operar de manera autónoma y sostenible en el Río Suquía.</p>
+            </div>
+            <div class="rounded-4xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40">
+              <h2 class="text-xl font-semibold text-slate-950">Componentes principales</h2>
+              <ul class="mt-6 space-y-4 text-slate-700">
+                <li>Paneles solares flexibles en cubierta.</li>
+                <li>Batería Li-ion de alta eficiencia.</li>
+                <li>Cinta transportadora para residuos flotantes.</li>
+                <li>Sensores ambientales y conectividad IoT.</li>
+                <li>Propulsión eléctrica limpia.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="space-y-8">
+          <div class="rounded-4xl bg-white p-8 shadow-xl shadow-slate-200/40">
+            <h2 class="section-title text-3xl font-semibold text-slate-950">Flujo energético y operativo</h2>
+            <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+              <div class="flow-step rounded-3xl border border-slate-200 bg-surface p-6 text-center">
+                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-white">☀️</div>
+                <p class="text-lg font-semibold text-slate-950">Sol</p>
+                <p class="mt-3 text-sm text-slate-600">Energía fotovoltaica directa.</p>
+              </div>
+              <div class="flow-step rounded-3xl border border-slate-200 bg-surface p-6 text-center">
+                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary text-white">🔋</div>
+                <p class="text-lg font-semibold text-slate-950">Panel Solar</p>
+                <p class="mt-3 text-sm text-slate-600">Captación eficiente con paneles flexibles.</p>
+              </div>
+              <div class="flow-step rounded-3xl border border-slate-200 bg-surface p-6 text-center">
+                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-container text-white">⚡</div>
+                <p class="text-lg font-semibold text-slate-950">Batería Li-ion</p>
+                <p class="mt-3 text-sm text-slate-600">Almacenamiento inteligente para operación 24/7.</p>
+              </div>
+              <div class="flow-step rounded-3xl border border-slate-200 bg-surface p-6 text-center">
+                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary-container text-secondary">📡</div>
+                <p class="text-lg font-semibold text-slate-950">Sistemas Auxiliares</p>
+                <p class="mt-3 text-sm text-slate-600">IoT, sensores y control de navegación.</p>
+              </div>
+              <div class="flow-step rounded-3xl border border-slate-200 bg-surface p-6 text-center">
+                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-900 text-white">🚢</div>
+                <p class="text-lg font-semibold text-slate-950">Hélices y Cinta</p>
+                <p class="mt-3 text-sm text-slate-600">Propulsión limpia y recolección de residuos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid gap-8 lg:grid-cols-2">
+            <article class="blueprint-card rounded-4xl p-8">
+              <h3 class="text-2xl font-semibold text-slate-950">Captación fotovoltaica</h3>
+              <p class="mt-4 text-slate-700">Los paneles solares flexibles aprovechan la radiación en la superficie del río y cargan la batería principal, permitiendo que EcoBoat trabaje incluso en condiciones de baja luminosidad.</p>
+            </article>
+            <article class="blueprint-card rounded-4xl p-8">
+              <h3 class="text-2xl font-semibold text-slate-950">Batería e inversores</h3>
+              <p class="mt-4 text-slate-700">La batería Li-ion se conecta a un sistema de gestión de energía que regula la carga, protege contra sobrecargas y alimenta la propulsión y los sistemas de monitoreo.</p>
+            </article>
+            <article class="blueprint-card rounded-4xl p-8">
+              <h3 class="text-2xl font-semibold text-slate-950">Sensores ambientales</h3>
+              <p class="mt-4 text-slate-700">Sensores de pH, turbidez y temperatura permiten detectar cambios en la calidad del agua y alertar si se requiere intervención adaptativa.</p>
+            </article>
+            <article class="blueprint-card rounded-4xl p-8">
+              <h3 class="text-2xl font-semibold text-slate-950">Iluminación nocturna</h3>
+              <p class="mt-4 text-slate-700">Luces LED de bajo consumo mejoran la visibilidad y seguridad del recorrido sin alterar la fauna nocturna cuando el sol se oculta.</p>
+            </article>
+          </div>
+
+          <div class="rounded-4xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40">
+            <h2 class="section-title text-3xl font-semibold text-slate-950">Especificaciones técnicas</h2>
+            <div class="mt-8 overflow-hidden rounded-3xl border border-slate-200">
+              <div class="grid grid-cols-1 divide-y divide-slate-200 text-sm sm:grid-cols-2 sm:divide-y-0 sm:divide-x">
+                <div class="p-6">
+                  <p class="font-semibold text-slate-950">Energía</p>
+                  <p class="mt-3 text-slate-700">Paneles solares 250 W, batería Li-ion 48 V 100 Ah, inversor DC/AC integrado.</p>
+                </div>
+                <div class="p-6">
+                  <p class="font-semibold text-slate-950">Transporte</p>
+                  <p class="mt-3 text-slate-700">Cinta transportadora de recolección con velocidad ajustable y compartimiento de carga.</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 divide-y divide-slate-200 text-sm sm:grid-cols-2 sm:divide-y-0 sm:divide-x">
+                <div class="p-6">
+                  <p class="font-semibold text-slate-950">Sensores</p>
+                  <p class="mt-3 text-slate-700">pH, turbidez, temperatura, nivel de agua y posicionamiento GPS.</p>
+                </div>
+                <div class="p-6">
+                  <p class="font-semibold text-slate-950">Conectividad</p>
+                  <p class="mt-3 text-slate-700">Monitoreo remoto por IoT, datos en tiempo real y alertas vía red móvil.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+      <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="archive.html">Archive</a></li>
+          <li><a href="daily-idea.html">Daily Idea</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="about.html">About This Project</a></li>
+          <li><a href="donate.html">Support Us</a></li>
+          <li><a href="index.html#">Privacy</a></li>
+          <li><a href="index.html#">Terms</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="daily-idea.html">Explore Today</a></li>
+          <li><a href="categories.html">By Discipline</a></li>
+          <li><a href="archive.html">Browse All</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 One Day, One New Knowledge. A passion project dedicated to curiosity and learning.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+</body>
+</html>
+
+
+
