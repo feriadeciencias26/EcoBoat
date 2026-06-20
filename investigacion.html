@@ -1,131 +1,432 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoBoat Suquía | Investigación</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBoat Suquía </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body class="min-h-screen bg-surface text-slate-900">
-    <header class="glass-nav fixed inset-x-0 top-0 z-50">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="index.html" class="flex items-center gap-3 text-base font-semibold text-primary">
-          <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary text-white">E</span>
-          EcoBoat Suquía
-        </a>
-        <button id="menu-toggle" class="inline-flex items-center justify-center rounded-full bg-white/90 p-2 text-slate-700 shadow-sm shadow-slate-200 ring-1 ring-slate-200 sm:hidden">
-          <span class="sr-only">Abrir menú</span>
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <nav id="nav-menu" class="hidden sm:flex sm:items-center sm:gap-6">
-          <a href="index.html" class="text-sm font-medium text-slate-700 hover:text-primary">Inicio</a>
-          <a href="problema.html" class="text-sm font-medium text-slate-700 hover:text-primary">Problema</a>
-          <a href="solucion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Solución</a>
-          <a href="investigacion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Investigación</a>
-          <a href="impacto.html" class="text-sm font-medium text-slate-700 hover:text-primary">Impacto</a>
-          <a href="galeria.html" class="text-sm font-medium text-slate-700 hover:text-primary">Galería</a>
-          <a href="acerca.html" class="text-sm font-medium text-slate-700 hover:text-primary">Acerca</a>
-        </nav>
-      </div>
-    </header>
+</head>
 
-    <main class="pt-24">
-      <section class="bg-surface2 py-20">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div class="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-            <div class="space-y-6">
-              <p class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">Investigación</p>
-              <h1 class="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">Marco científico y metodología</h1>
-              <p class="max-w-2xl text-lg leading-8 text-slate-700">El proyecto EcoBoat Suquía integra análisis ambiental, hipótesis de campo y soluciones tecnológicas para responder al problema de residuos sólidos en el río.</p>
-            </div>
-            <div class="rounded-4xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40">
-              <h2 class="text-xl font-semibold text-slate-950">Base técnica</h2>
-              <p class="mt-4 text-slate-700">Estudio del río Suquía, análisis de contaminación, encuestas comunitarias y evaluación de tecnologías limpias para la recolección en zonas urbanas y ribereñas.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<body class="bg-slate-50 text-slate-800">
 
-      <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div class="grid gap-10 lg:grid-cols-2">
-          <article class="blueprint-card rounded-4xl p-8">
-            <h2 class="section-title text-3xl font-semibold text-slate-950">Metodología aplicada</h2>
-            <p class="mt-4 text-slate-700">Relevamiento de la calidad del agua, análisis de residuos recolectados y diseño de prototipo con pruebas de eficiencia energética y ambiental en el entorno del río.</p>
-            <ul class="mt-6 space-y-4 text-slate-700 list-disc pl-5">
-              <li>Muestreo de puntos críticos en el cauce.</li>
-              <li>Evaluación de tipos de basura y patrones de acumulación.</li>
-              <li>Diseño de prototipo modular con energía solar.</li>
-              <li>Prueba de recolección y monitoreo remoto.</li>
-            </ul>
-          </article>
-          <article class="blueprint-card rounded-4xl p-8">
-            <h2 class="section-title text-3xl font-semibold text-slate-950">Resultados esperados</h2>
-            <p class="mt-4 text-slate-700">Menos residuos flotantes, mejor calidad del agua y mayor conciencia local sobre gestión de residuos y tecnología sustentable.</p>
-            <div class="mt-6 space-y-4 text-slate-700">
-              <p class="font-semibold text-slate-950">Impacto esperado:</p>
-              <ul class="list-disc pl-5">
-                <li>Reducción del 30% en basura visible en zonas intervenidas.</li>
-                <li>Menos riesgos sanitarios para comunidades ribereñas.</li>
-                <li>Modelo replicable en otras cuencas de Córdoba.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
+<!--================ NAVBAR ================-->
 
-      <section class="bg-[radial-gradient(circle_at_top_left,_rgba(0,93,144,0.14),transparent_25%),radial-gradient(circle_at_bottom_right,_rgba(44,105,78,0.14),transparent_22%),#f8f9fa] py-16">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="grid gap-6 lg:grid-cols-3">
-            <div class="rounded-4xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40">
-              <h3 class="text-xl font-semibold text-slate-950">Monitoreo ambiental</h3>
-              <p class="mt-4 text-slate-700">Registro de pH, temperatura y turbidez para evaluar la salud del río ante la intervención del barco recolector.</p>
-            </div>
-            <div class="rounded-4xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40">
-              <h3 class="text-xl font-semibold text-slate-950">Sensorización</h3>
-              <p class="mt-4 text-slate-700">Uso de sensores IoT para alertas tempranas y toma de decisiones basada en datos en tiempo real.</p>
-            </div>
-            <div class="rounded-4xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40">
-              <h3 class="text-xl font-semibold text-slate-950">Medición de impacto</h3>
-              <p class="mt-4 text-slate-700">Indicadores claros de reducción de residuos, ahorro de energía y calidad de ecosistemas ribereños.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+<header class="glass-nav fixed inset-x-0 top-0 z-50">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+<a href="index.html" class="flex items-center gap-3 text-base font-semibold text-primary">
+<span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary text-white">
 
- <!-- Footer -->
-  <footer>
-    <footer class="main-footer"></footer>
-    <div class="footer-bottom"></div>
-    <div class="footer-content">
+E
 
-      <div class="footer-section">
-        <h4>Explorar</h4>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="problema.html">Problema</a></li>
-          <li><a href="solucion.html">Solución</a></li>
-          <li><a href="impacto.html">Impacto</a></li>
-        </ul>
-      </div>
+</span>
 
-      <div class="footer-section">
-        <h4>Aprender</h4>
-        <ul>
-          <li><a href="investigacion.html">Investigación</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="acerca.html">Acerca de</a></li>
-        </ul>
-      </div>
-    </div>
+EcoBoat Suquía
 
-    <div class="footer-bottom">
-      <p>&copy; Feria de Ciencias 2026 - Instituto Privado Nuestra Señora del Rosario del Milagro.</p>
-    </div>
-  </footer>
+</a>
 
-  <script src="data.js"></script>
+<button id="menu-toggle"
+class="inline-flex items-center justify-center rounded-full bg-white p-2 shadow sm:hidden">
+
+☰
+
+</button>
+
+<nav id="nav-menu"
+class="hidden sm:flex sm:items-center sm:gap-6">
+
+<a href="index.html">Inicio</a>
+<a href="problema.html">Problema</a>
+<a href="solucion.html">Solución</a>
+<a href="investigacion.html">Investigación</a>
+<a href="impacto.html">Impacto</a>
+<a href="galeria.html">Galería</a>
+<a href="acerca.html">Acerca</a>
+</nav>
+</div>
+</header>
+
+<!--================ HERO ================-->
+
+<main class="pt-24">
+<section class="relative overflow-hidden min-h-[90vh] flex items-center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/R%C3%ADo_Primero_y_Puente_del_Bicentenario._C%C3%B3rdoba_city%2C_Argentina_2013-10-29.jpg/250px-R%C3%ADo_Primero_y_Puente_del_Bicentenario._C%C3%B3rdoba_city%2C_Argentina_2013-10-29.jpg"
+class="absolute inset-0 w-full h-full object-cover">
+<div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/70 to-transparent"></div>
+<div class="relative max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<h1 class="mt-8 text-5xl lg:text-7xl font-extrabold text-white leading-tight">Conocimiento que<span class="text-green-400">hace la diferencia</span></h1>
+
+<p class="mt-8 text-xl leading-9 text-slate-200 max-w-2xl">El desarrollo de <strong>EcoBoat Suquía</strong> requirió investigar distintas disciplinas científicas y tecnológicas. La combinación de Física, Ingeniería Mecánica, Ingeniería Eléctrica y Ciencias Ambientales permitió diseñar una solución sustentable para reducir la contaminación del río utilizando energía solar.</p>
+
+<div class="mt-10 flex gap-5">
+</div>
+</div>
+</div>
+<div class="hidden lg:flex justify-end">
+
+<img src="img/barco-investigacion.png"
+class="rounded-[30px] shadow-2xl w-full max-w-lg">
+</div>
+</div>
+</div>
+</section>
+
+<!--================ ÁREAS =================-->
+
+<section class="bg-white py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center">
+<p class="uppercase tracking-[.3em] text-green-700 font-semibold">ÁREAS DE ESTUDIO</p>
+
+<h2 class="mt-4 text-5xl font-bold">¿Qué investigamos?</h2>
+
+<p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">Cada disciplina aportó conocimientos fundamentales para desarrollar un barco sustentable, eficiente y capaz de limpiar el río Suquía.</p>
+</div>
+<div class="grid lg:grid-cols-2 gap-10 mt-20">
+
+<!-- Física -->
+
+<article class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 duration-300">
+
+<img src="https://images.openai.com/static-rsc-4/vLac7ErmlxGq3jDftCtLkg4Frl4B8J7SBD-KrUVXwICg6AexUmnAqfHHEprD41SeAhqkpqqxlxdGP9H7LCXGiQqT6SEd-gcabF6wE51PuUilucVjUIbV_8utQcuaPD0j_Qeh9CQjWpsuXwXdOg95mIE4LdwqBzrteFUvok4aXzz2SmeyM9gcyE1ItXGf6r-L?purpose=fullsize"
+class="h-72 w-full object-cover">
+<div class="p-8">
+<h3 class="text-3xl font-bold text-green-700">Física</h3>
+<p class="mt-5 text-slate-600">La física explica cómo el barco transforma la energía solar en electricidad y cómo logra mantenerse estable sobre el agua.</p>
+<ul class="mt-6 space-y-3">
+
+<li></li>Conversión de energía solar.</li>
+<li></li>Funcionamiento del motor.</li>
+<li>Movimiento del barco.</li>
+<li>Principio de flotación.</li>
+</ul>
+
+<div class="mt-8 bg-green-50 rounded-xl p-5">
+
+<strong>¿Por qué flota el barco?</strong>
+<p class="mt-2 text-slate-600">El EcoBoat Suquía flota gracias al principio de Arquímedes. Al desplazarse sobre el agua, esta ejerce una fuerza hacia arriba llamada empuje, que sostiene la embarcación. Además, el diseño del casco y la correcta distribución del peso permiten que el barco navegue de forma estable mientras recolecta residuos.</p>
+</div>
+</div>
+
+</article>
+<!-- Ingeniería Mecánica -->
+
+<article class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 duration-300">
+
+<img src="https://images.openai.com/static-rsc-4/UImpuR3KVXCMZP-uEo0L2PqVQZztheNNt72R7T_RouhxSZ34wOtUggRxzaEy5ib8W4OQGWqtZtQ0_HjAVQ3Weh1TGTW29tqpPbNRfmKrkz-4rPbfEYNQjKBtFvOp_5Qed4O8xLlR1bAgPHpfRXiwDgSlymCqCqrJpOqlC_0UKruvh6-AUYOVFCUfP87syeit?purpose=fullsize"
+class="h-72 w-full object-cover">
+<div class="p-8">
+
+<h3 class="text-3xl font-bold text-blue-700">
+
+Ingeniería Mecánica
+
+</h3>
+
+<p class="mt-5 text-slate-600">
+
+Permite diseñar una estructura resistente capaz de navegar y recoger residuos sin perder estabilidad durante el recorrido.
+
+</p>
+
+<ul class="mt-6 space-y-3">
+
+<li>Diseño del casco.</li>
+
+<li>Funcionamiento de la cinta transportadora.</li>
+
+<li>Distribución del peso.</li>
+
+<li>Materiales resistentes al agua.</li>
+
+</ul>
+
+<div class="mt-8 bg-blue-50 rounded-xl p-5">
+
+<strong>¿Por qué es importante la distribución del peso?</strong>
+
+<p class="mt-2 text-slate-600">
+
+La distribución del peso es fundamental para mantener la estabilidad de una embarcación. Si el peso se concentra en un solo lado, el barco puede inclinarse o perder el equilibrio. Por eso, los componentes se ubican estratégicamente para lograr una navegación segura.
+
+</p>
+
+</div>
+
+</div>
+
+</article>
+
+<!-- Ingeniería Eléctrica -->
+
+<article class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 duration-300">
+
+<img src="https://images.openai.com/static-rsc-4/bqMYIh1M7zPNCG0EtVSJaTasFrX0yj5-NrB74l-ZDgQQGZtx2eDRLXJceWwZO2xCpQtlsvjcJqeFkEd0JD7X3LN2oQ-J2H9_1DQHMgjCeM5pquZeCXbnAQCqtoq23kknKPksWLoqMGh8JNS95WlecA0FdRPqlOg-ZMcqtwKPdyI9g6MaY1VWThuZtA9pB3iR?purpose=fullsize"
+class="h-72 w-full object-cover">
+
+<div class="p-8">
+
+<h3 class="text-3xl font-bold text-yellow-600">
+
+Ingeniería Eléctrica
+
+</h3>
+
+<p class="mt-5 text-slate-600">
+
+Hace posible que la energía producida por los paneles solares llegue correctamente al motor y al resto de los componentes eléctricos.
+
+</p>
+
+<ul class="mt-6 space-y-3">
+
+<li>Paneles solares.</li>
+
+<li>Cables y conexiones.</li>
+
+<li>Motor eléctrico.</li>
+
+<li>Batería recargable.</li>
+
+</ul>
+
+<div class="mt-8 bg-yellow-50 rounded-xl p-5">
+
+<strong>¿Qué es un circuito eléctrico?</strong>
+
+<p class="mt-2 text-slate-600">Un circuito eléctrico es el camino por el que circula la corriente eléctrica. Para que el motor funcione correctamente, todos los componentes deben estar conectados formando un circuito cerrado.</p>
+</div>
+</div>
+</article>
+
+<!-- Ciencias Ambientales -->
+
+<article class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 duration-300">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmySoBBYilIgctFa2jpN2ZNdPFL_5x7nrTTQ&s"
+class="h-72 w-full object-cover">
+
+<div class="p-8">
+
+<h3 class="text-3xl font-bold text-green-700">
+
+Ciencias Ambientales
+
+</h3>
+
+<p class="mt-5 text-slate-600">
+
+Ayudan a comprender el problema ambiental y permiten proponer soluciones para recuperar el ecosistema del río Suquía.
+
+</p>
+
+<ul class="mt-6 space-y-3">
+
+<li>Causas de la contaminación.</li>
+
+<li>Efectos sobre la fauna.</li>
+
+<li>Consecuencias para la flora.</li>
+
+<li>Estrategias de recuperación.</li>
+
+</ul>
+
+<div class="mt-8 bg-green-50 rounded-xl p-5">
+
+<strong>¿Qué es un ecosistema?</strong>
+
+<p class="mt-2 text-slate-600">Un ecosistema es el conjunto de los seres vivos y el ambiente donde habitan. Cuando un río se contamina, se altera el equilibrio del ecosistema y se ven afectadas tanto la fauna como la flora.</p>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!--================ PROCESO =================-->
+
+<section class="py-24 bg-slate-100">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="text-center">
+
+<p class="uppercase tracking-[.3em] text-green-700 font-semibold">
+
+PROCESO DE INVESTIGACIÓN
+
+</p>
+
+<h2 class="mt-4 text-5xl font-bold">
+
+Del problema a la solución
+
+</h2>
+
+<p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">
+
+Cada etapa permitió transformar una idea en un prototipo funcional capaz de contribuir a la limpieza del río Suquía.
+
+</p>
+
+</div>
+
+<div class="grid md:grid-cols-5 gap-8 mt-20">
+
+<div class="text-center">
+<div class="w-20 h-20 rounded-full bg-green-600 text-white flex items-center justify-center text-4xl mx-auto">🔍</div>
+<h3 class="font-bold mt-6">Observación</h3>
+<p class="mt-3 text-slate-600">Identificamos los principales focos de contaminación.</p>
+</div>
+
+<div class="text-center">
+<div class="w-20 h-20 rounded-full bg-green-600 text-white flex items-center justify-center text-4xl mx-auto">📚</div>
+<h3 class="font-bold mt-6">Investigación</h3>
+<p class="mt-3 text-slate-600">Analizamos energías renovables y embarcaciones.</p>
+</div>
+
+<div class="text-center">
+<div class="w-20 h-20 rounded-full bg-green-600 text-white flex items-center justify-center text-4xl mx-auto">📝</div>
+<h3 class="font-bold mt-6">Diseño</h3>
+<p class="mt-3 text-slate-600">Creamos bocetos y elegimos materiales.</p>
+</div>
+
+<div class="text-center">
+<div class="w-20 h-20 rounded-full bg-green-600 text-white flex items-center justify-center text-4xl mx-auto">🔧</div>
+<h3 class="font-bold mt-6">Construcción</h3>
+<p class="mt-3 text-slate-600">Integramos el barco, paneles y sistema recolector.</p>
+</div>
+
+<div class="text-center">
+<div class="w-20 h-20 rounded-full bg-green-600 text-white flex items-center justify-center text-4xl mx-auto">🧪</div>
+<h3 class="font-bold mt-6">Pruebas</h3>
+<p class="mt-3 text-slate-600">Evaluamos el funcionamiento y realizamos mejoras.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!--================ CONCLUSIÓN =================-->
+
+<section class="py-24 bg-gradient-to-r from-green-700 via-green-800 to-blue-900 text-white">
+
+<div class="max-w-5xl mx-auto px-6 text-center">
+
+<span class="inline-block rounded-full bg-white/10 px-6 py-2 uppercase tracking-[.25em]">
+
+Conclusión
+
+</span>
+
+<h2 class="mt-8 text-5xl font-bold">
+
+Investigación que genera soluciones
+
+</h2>
+
+<p class="mt-10 text-xl leading-10 text-green-100">
+
+Gracias a la integración de conocimientos de Física, Ingeniería Mecánica,
+Ingeniería Eléctrica y Ciencias Ambientales fue posible diseñar un
+prototipo capaz de contribuir a la limpieza del río Suquía utilizando
+energía solar.
+
+</p>
+
+<p class="mt-8 text-xl leading-10 text-green-100">
+
+Este proyecto demuestra cómo la ciencia y la tecnología pueden trabajar
+juntas para cuidar el ambiente y construir un futuro más sustentable.
+
+</p>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+
+<div class="bg-white/10 rounded-3xl p-6">
+<div class="text-5xl">⚛️</div>
+<p class="mt-4 font-semibold">Física</p>
+</div>
+
+<div class="bg-white/10 rounded-3xl p-6">
+<div class="text-5xl">⚙️</div>
+<p class="mt-4 font-semibold">Ing. Mecánica</p>
+</div>
+
+<div class="bg-white/10 rounded-3xl p-6">
+<div class="text-5xl">⚡</div>
+<p class="mt-4 font-semibold">Ing. Eléctrica</p>
+</div>
+
+<div class="bg-white/10 rounded-3xl p-6">
+<div class="text-5xl">🌿</div>
+<p class="mt-4 font-semibold">Ambientales</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ FOOTER =================-->
+
+<footer>
+
+<div class="footer-content">
+
+<div class="footer-section">
+
+<h4>Explorar</h4>
+
+<ul>
+
+<li><a href="index.html">Inicio</a></li>
+<li><a href="problema.html">Problema</a></li>
+<li><a href="solucion.html">Solución</a></li>
+<li><a href="impacto.html">Impacto</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-section">
+
+<h4>Aprender</h4>
+
+<ul>
+
+<li><a href="investigacion.html">Investigación</a></li>
+<li><a href="galeria.html">Galería</a></li>
+<li><a href="acerca.html">Acerca de</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+
+&copy; Feria de Ciencias 2026 - Instituto Privado Nuestra Señora del Rosario del Milagro.
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="data.js"></script>
+
 </body>
-</html>
 
+</html>
