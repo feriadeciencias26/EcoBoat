@@ -1,173 +1,666 @@
-<!doctype html>
+
+             <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoBoat Suquía | Arquitectura y Funcionamiento</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBoat Suquía | Solución</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body class="min-h-screen bg-surface text-slate-900">
-    <header class="glass-nav fixed inset-x-0 top-0 z-50">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+<!--================ NAVBAR ================-->
+
+<header class="glass-nav fixed inset-x-0 top-0 z-50">
+
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+
         <a href="index.html" class="flex items-center gap-3 text-base font-semibold text-primary">
-          <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary text-white">E</span>
-          EcoBoat Suquía
+
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary text-white">
+
+                E
+
+            </span>
+
+            EcoBoat Suquía
+
         </a>
-        <button id="menu-toggle" class="inline-flex items-center justify-center rounded-full bg-white/90 p-2 text-slate-700 shadow-sm shadow-slate-200 ring-1 ring-slate-200 sm:hidden">
-          <span class="sr-only">Abrir menú</span>
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+        <button id="menu-toggle"
+            class="inline-flex items-center justify-center rounded-full bg-white p-2 shadow sm:hidden">
+
+            ☰
+
         </button>
-        <nav id="nav-menu" class="hidden sm:flex sm:items-center sm:gap-6">
-          <a href="index.html" class="text-sm font-medium text-slate-700 hover:text-primary">Inicio</a>
-          <a href="problema.html" class="text-sm font-medium text-slate-700 hover:text-primary">Problema</a>
-          <a href="solucion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Solución</a>
-          <a href="investigacion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Investigación</a>
-          <a href="impacto.html" class="text-sm font-medium text-slate-700 hover:text-primary">Impacto</a>
-          <a href="galeria.html" class="text-sm font-medium text-slate-700 hover:text-primary">Galería</a>
-          <a href="acerca.html" class="text-sm font-medium text-slate-700 hover:text-primary">Acerca</a>
+
+        <nav id="nav-menu"
+            class="hidden sm:flex sm:items-center sm:gap-6">
+
+            <a href="index.html">Inicio</a>
+            <a href="problema.html">Problema</a>
+
+            <a href="solucion.html"
+                class="text-primary font-semibold">
+
+                Solución
+
+            </a>
+
+            <a href="investigacion.html">Investigación</a>
+            <a href="impacto.html">Impacto</a>
+            <a href="galeria.html">Galería</a>
+            <a href="acerca.html">Acerca</a>
+
         </nav>
-      </div>
-    </header>
 
-    <main class="pt-24">
-      <section class="bg-surface2 py-20">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div class="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-            <div class="space-y-6">
-              <p class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">Arquitectura</p>
-              <h1 class="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">Diseño tecnológico eficiente</h1>
-              <p class="max-w-2xl text-lg leading-8 text-slate-700">EcoBoat Suquía combina captación solar, almacenamiento inteligente y sistemas de recolección para operar de manera autónoma y sostenible en el Río Suquía.</p>
+    </div>
+
+</header>
+
+<main class="pt-24">
+
+<!--================ HERO =================-->
+
+<section class="relative min-h-[90vh] overflow-hidden flex items-center">
+
+    <img src="img/barco-solucion.jpg"
+        class="absolute inset-0 h-full w-full object-cover">
+
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/70 to-transparent"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <div>
+
+                <span
+                    class="inline-flex rounded-full bg-green-500/20 border border-green-400 px-5 py-2 text-green-200 uppercase tracking-[.3em] text-sm">
+
+                    Solución
+
+                </span>
+
+                <h1 class="mt-8 text-5xl lg:text-7xl font-extrabold text-white leading-tight">
+
+                    Una solución inteligente para un
+
+                    <span class="text-green-400">
+
+                        río más limpio
+
+                    </span>
+
+                </h1>
+
+                <p class="mt-8 text-xl leading-9 text-slate-200 max-w-2xl">
+
+                    EcoBoat Suquía es un prototipo diseñado para recolectar residuos flotantes utilizando energía solar. Su funcionamiento combina tecnología, innovación e ingeniería para contribuir a la limpieza del río de una forma sustentable.
+
+                </p>
+
+                <div class="mt-10 flex flex-wrap gap-5">
+
+                    <div class="bg-white/10 backdrop-blur rounded-2xl px-6 py-5">
+
+                        <h2 class="text-4xl font-bold text-green-300">
+
+                            ☀️
+
+                        </h2>
+
+                        <p class="text-white">
+
+                            Energía Solar
+
+                        </p>
+
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur rounded-2xl px-6 py-5">
+
+                        <h2 class="text-4xl font-bold text-green-300">
+
+                            ♻️
+
+                        </h2>
+
+                        <p class="text-white">
+
+                            Recolección de residuos
+
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
-            <div class="rounded-4xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40">
-              <h2 class="text-xl font-semibold text-slate-950">Componentes principales</h2>
-              <ul class="mt-6 space-y-4 text-slate-700">
-                <li>Paneles solares flexibles en cubierta.</li>
-                <li>Batería Li-ion de alta eficiencia.</li>
-                <li>Cinta transportadora para residuos flotantes.</li>
-                <li>Sensores ambientales y conectividad IoT.</li>
-                <li>Propulsión eléctrica limpia.</li>
-              </ul>
+
+            <div class="hidden lg:flex justify-end">
+
+                <img src="img/prototipo.png"
+                    class="rounded-[35px] shadow-2xl max-w-lg w-full">
+
             </div>
-          </div>
+
         </div>
-      </section>
 
-      <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div class="space-y-8">
-          <div class="rounded-4xl bg-white p-8 shadow-xl shadow-slate-200/40">
-            <h2 class="section-title text-3xl font-semibold text-slate-950">Flujo energético y operativo</h2>
-            <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
-              <div class="flow-step rounded-3xl border border-slate-200 bg-surface p-6 text-center">
-                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-white">☀️</div>
-                <p class="text-lg font-semibold text-slate-950">Sol</p>
-                <p class="mt-3 text-sm text-slate-600">Energía fotovoltaica directa.</p>
-              </div>
-              <div class="flow-step rounded-3xl border border-slate-200 bg-surface p-6 text-center">
-                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary text-white">🔋</div>
-                <p class="text-lg font-semibold text-slate-950">Panel Solar</p>
-                <p class="mt-3 text-sm text-slate-600">Captación eficiente con paneles flexibles.</p>
-              </div>
-              <div class="flow-step rounded-3xl border border-slate-200 bg-surface p-6 text-center">
-                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-container text-white">⚡</div>
-                <p class="text-lg font-semibold text-slate-950">Batería Li-ion</p>
-                <p class="mt-3 text-sm text-slate-600">Almacenamiento inteligente para operación 24/7.</p>
-              </div>
-              <div class="flow-step rounded-3xl border border-slate-200 bg-surface p-6 text-center">
-                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary-container text-secondary">📡</div>
-                <p class="text-lg font-semibold text-slate-950">Sistemas Auxiliares</p>
-                <p class="mt-3 text-sm text-slate-600">IoT, sensores y control de navegación.</p>
-              </div>
-              <div class="flow-step rounded-3xl border border-slate-200 bg-surface p-6 text-center">
-                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-900 text-white">🚢</div>
-                <p class="text-lg font-semibold text-slate-950">Hélices y Cinta</p>
-                <p class="mt-3 text-sm text-slate-600">Propulsión limpia y recolección de residuos.</p>
-              </div>
-            </div>
-          </div>
+    </div>
 
-          <div class="grid gap-8 lg:grid-cols-2">
-            <article class="blueprint-card rounded-4xl p-8">
-              <h3 class="text-2xl font-semibold text-slate-950">Captación fotovoltaica</h3>
-              <p class="mt-4 text-slate-700">Los paneles solares flexibles aprovechan la radiación en la superficie del río y cargan la batería principal, permitiendo que EcoBoat trabaje incluso en condiciones de baja luminosidad.</p>
-            </article>
-            <article class="blueprint-card rounded-4xl p-8">
-              <h3 class="text-2xl font-semibold text-slate-950">Batería e inversores</h3>
-              <p class="mt-4 text-slate-700">La batería Li-ion se conecta a un sistema de gestión de energía que regula la carga, protege contra sobrecargas y alimenta la propulsión y los sistemas de monitoreo.</p>
-            </article>
-            <article class="blueprint-card rounded-4xl p-8">
-              <h3 class="text-2xl font-semibold text-slate-950">Sensores ambientales</h3>
-              <p class="mt-4 text-slate-700">Sensores de pH, turbidez y temperatura permiten detectar cambios en la calidad del agua y alertar si se requiere intervención adaptativa.</p>
-            </article>
-            <article class="blueprint-card rounded-4xl p-8">
-              <h3 class="text-2xl font-semibold text-slate-950">Iluminación nocturna</h3>
-              <p class="mt-4 text-slate-700">Luces LED de bajo consumo mejoran la visibilidad y seguridad del recorrido sin alterar la fauna nocturna cuando el sol se oculta.</p>
-            </article>
-          </div>
+</section>
 
-          <div class="rounded-4xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40">
-            <h2 class="section-title text-3xl font-semibold text-slate-950">Especificaciones técnicas</h2>
-            <div class="mt-8 overflow-hidden rounded-3xl border border-slate-200">
-              <div class="grid grid-cols-1 divide-y divide-slate-200 text-sm sm:grid-cols-2 sm:divide-y-0 sm:divide-x">
-                <div class="p-6">
-                  <p class="font-semibold text-slate-950">Energía</p>
-                  <p class="mt-3 text-slate-700">Paneles solares 250 W, batería Li-ion 48 V 100 Ah, inversor DC/AC integrado.</p>
-                </div>
-                <div class="p-6">
-                  <p class="font-semibold text-slate-950">Transporte</p>
-                  <p class="mt-3 text-slate-700">Cinta transportadora de recolección con velocidad ajustable y compartimiento de carga.</p>
-                </div>
-              </div>
-              <div class="grid grid-cols-1 divide-y divide-slate-200 text-sm sm:grid-cols-2 sm:divide-y-0 sm:divide-x">
-                <div class="p-6">
-                  <p class="font-semibold text-slate-950">Sensores</p>
-                  <p class="mt-3 text-slate-700">pH, turbidez, temperatura, nivel de agua y posicionamiento GPS.</p>
-                </div>
-                <div class="p-6">
-                  <p class="font-semibold text-slate-950">Conectividad</p>
-                  <p class="mt-3 text-slate-700">Monitoreo remoto por IoT, datos en tiempo real y alertas vía red móvil.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+<!--================ FUNCIONAMIENTO =================-->
+
+<section class="bg-white py-24">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <p class="uppercase tracking-[.3em] text-green-700 font-semibold">
+
+                FUNCIONAMIENTO
+
+            </p>
+
+            <h2 class="mt-4 text-5xl font-bold">
+
+                ¿Cómo funciona el EcoBoat?
+
+            </h2>
+
+            <p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">
+
+                El funcionamiento del EcoBoat combina energías renovables, sistemas mecánicos y componentes eléctricos para navegar y recolectar residuos de manera eficiente.
+
+            </p>
+
         </div>
-      </section>
-    </main>
 
- <!-- Footer -->
-  <footer>
-    <footer class="main-footer"></footer>
-    <div class="footer-bottom"></div>
+        <div class="grid lg:grid-cols-2 gap-10 mt-20">
+
+<!--================ TARJETA 1 =================-->
+
+<article class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 duration-300">
+
+    <img src="img/paneles.jpg"
+        class="h-72 w-full object-cover">
+
+    <div class="p-8">
+
+        <h3 class="text-3xl font-bold text-green-700">
+
+            ☀️ Captación de energía
+
+        </h3>
+
+        <p class="mt-5 text-slate-600">
+
+            Los paneles solares captan la energía proveniente del Sol y la transforman en electricidad para alimentar el sistema del EcoBoat.
+
+        </p>
+
+        <ul class="mt-6 space-y-3">
+
+            <li>✔ Energía renovable.</li>
+            <li>✔ No produce emisiones.</li>
+            <li>✔ Alimenta la batería.</li>
+            <li>✔ Reduce el consumo de combustibles.</li>
+
+        </ul>
+
+    </div>
+
+</article>
+
+<!--================ TARJETA 2 =================-->
+
+<article class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 duration-300">
+
+    <img src="img/motor.jpg"
+        class="h-72 w-full object-cover">
+
+    <div class="p-8">
+
+        <h3 class="text-3xl font-bold text-blue-700">
+
+            ⚡ Sistema eléctrico
+
+        </h3>
+
+        <p class="mt-5 text-slate-600">
+
+            La electricidad producida por los paneles solares se almacena en una batería y luego alimenta el motor eléctrico encargado de impulsar la embarcación.
+
+        </p>
+
+        <ul class="mt-6 space-y-3">
+
+            <li>✔ Paneles solares.</li>
+            <li>✔ Batería recargable.</li>
+            <li>✔ Motor eléctrico.</li>
+            <li>✔ Cables y conexiones.</li>
+
+        </ul>
+
+    </div>
+
+</article>
+<!--================ TARJETA 3 =================-->
+
+<article class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 duration-300">
+
+    <img src="img/recolector.jpg"
+        class="h-72 w-full object-cover">
+
+    <div class="p-8">
+
+        <h3 class="text-3xl font-bold text-emerald-700">
+
+            ♻️ Sistema de recolección
+
+        </h3>
+
+        <p class="mt-5 text-slate-600">
+
+            Mientras el EcoBoat avanza, una cinta transportadora ubicada en la parte frontal recoge los residuos flotantes y los traslada automáticamente hacia el depósito de almacenamiento.
+
+        </p>
+
+        <ul class="mt-6 space-y-3">
+
+            <li>✔ Recolección continua.</li>
+            <li>✔ Cinta transportadora.</li>
+            <li>✔ Movimiento automático.</li>
+            <li>✔ Mayor eficiencia.</li>
+
+        </ul>
+
+    </div>
+
+</article>
+
+<!--================ TARJETA 4 =================-->
+
+<article class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 duration-300">
+
+    <img src="img/contenedor.jpg"
+        class="h-72 w-full object-cover">
+
+    <div class="p-8">
+
+        <h3 class="text-3xl font-bold text-cyan-700">
+
+            🗑️ Almacenamiento
+
+        </h3>
+
+        <p class="mt-5 text-slate-600">
+
+            Los residuos recolectados se depositan en un contenedor ubicado dentro del barco, evitando que vuelvan al agua y facilitando su posterior clasificación y disposición.
+
+        </p>
+
+        <ul class="mt-6 space-y-3">
+
+            <li>✔ Depósito interno.</li>
+            <li>✔ Evita que la basura regrese al río.</li>
+            <li>✔ Fácil extracción.</li>
+            <li>✔ Mayor capacidad de recolección.</li>
+
+        </ul>
+
+    </div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ FUNCIONAMIENTO PASO A PASO =================-->
+
+<section class="py-24 bg-slate-100">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="text-center">
+
+<p class="uppercase tracking-[.30em] text-green-700 font-semibold">
+
+FUNCIONAMIENTO PASO A PASO
+
+</p>
+
+<h2 class="mt-4 text-5xl font-bold">
+
+¿Cómo trabaja el EcoBoat?
+
+</h2>
+
+<p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">
+
+Cada componente cumple una función específica para lograr una navegación sustentable y una recolección eficiente de residuos.
+
+</p>
+
+</div>
+
+<div class="grid md:grid-cols-6 gap-6 mt-20 text-center">
+
+<div>
+
+<img src="img/iconos/sol.png" class="w-16 h-16 mx-auto">
+
+<h3 class="font-bold mt-4">1. Sol</h3>
+
+<p class="mt-2 text-slate-600 text-sm">
+
+La energía solar es la fuente principal del sistema.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="img/iconos/panel.png" class="w-16 h-16 mx-auto">
+
+<h3 class="font-bold mt-4">2. Paneles</h3>
+
+<p class="mt-2 text-slate-600 text-sm">
+
+Transforman la luz en electricidad.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="img/iconos/bateria.png" class="w-16 h-16 mx-auto">
+
+<h3 class="font-bold mt-4">3. Batería</h3>
+
+<p class="mt-2 text-slate-600 text-sm">
+
+Almacena la energía para alimentar el sistema.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="img/iconos/motor.png" class="w-16 h-16 mx-auto">
+
+<h3 class="font-bold mt-4">4. Motor</h3>
+
+<p class="mt-2 text-slate-600 text-sm">
+
+Impulsa el movimiento del barco.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="img/iconos/cinta.png" class="w-16 h-16 mx-auto">
+
+<h3 class="font-bold mt-4">5. Recolección</h3>
+
+<p class="mt-2 text-slate-600 text-sm">
+
+La cinta recoge los residuos flotantes.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="img/iconos/contenedor.png" class="w-16 h-16 mx-auto">
+
+<h3 class="font-bold mt-4">6. Depósito</h3>
+
+<p class="mt-2 text-slate-600 text-sm">
+
+Los residuos quedan almacenados para su retiro.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ COMPONENTES =================-->
+
+<section class="py-24 bg-white">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+
+<div>
+
+<img src="img/componentes-barco.jpg"
+class="rounded-3xl shadow-2xl w-full">
+
+</div>
+
+<div>
+
+<p class="uppercase tracking-[.30em] text-green-700 font-semibold">
+
+COMPONENTES
+
+</p>
+
+<h2 class="text-5xl font-bold mt-4">
+
+Elementos principales
+
+</h2>
+
+<p class="mt-6 text-lg text-slate-600">
+
+El EcoBoat integra diferentes componentes mecánicos y eléctricos que trabajan de forma conjunta para garantizar un funcionamiento eficiente y sustentable.
+
+</p>
+
+<div class="grid gap-5 mt-10">
+
+<div class="rounded-2xl bg-slate-100 p-5">
+<strong>☀️ Paneles solares</strong>
+<p class="text-slate-600 mt-2">Captan la energía del Sol.</p>
+</div>
+
+<div class="rounded-2xl bg-slate-100 p-5">
+<strong>⚡ Motor eléctrico</strong>
+<p class="text-slate-600 mt-2">Genera el movimiento de la embarcación.</p>
+</div>
+
+<div class="rounded-2xl bg-slate-100 p-5">
+<strong>♻️ Cinta transportadora</strong>
+<p class="text-slate-600 mt-2">Recoge los residuos flotantes.</p>
+</div>
+
+<div class="rounded-2xl bg-slate-100 p-5">
+<strong>🗑️ Contenedor</strong>
+<p class="text-slate-600 mt-2">Almacena los residuos recolectados.</p>
+</div>
+
+<div class="rounded-2xl bg-slate-100 p-5">
+<strong>🔋 Batería</strong>
+<p class="text-slate-600 mt-2">Almacena la energía eléctrica.</p>
+</div>
+
+<div class="rounded-2xl bg-slate-100 p-5">
+<strong>🚤 Casco</strong>
+<p class="text-slate-600 mt-2">Proporciona flotación y estabilidad.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--================ CONCLUSIÓN =================-->
+
+<section class="py-24 bg-gradient-to-r from-green-700 via-green-800 to-blue-900 text-white">
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <span class="inline-block rounded-full bg-white/10 px-6 py-2 uppercase tracking-[.25em]">
+
+            Solución sustentable
+
+        </span>
+
+        <h2 class="mt-8 text-5xl font-bold">
+
+            Tecnología al servicio del ambiente
+
+        </h2>
+
+        <p class="mt-10 text-xl leading-10 text-green-100">
+
+            EcoBoat Suquía demuestra que la integración de energías renovables,
+            ingeniería y diseño puede convertirse en una herramienta para reducir
+            la contaminación de los ríos. Su funcionamiento permite recolectar
+            residuos flotantes de forma eficiente, utilizando únicamente energía
+            solar y contribuyendo a la conservación del ecosistema.
+
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+
+            <div class="bg-white/10 rounded-3xl p-6">
+
+                <img src="img/iconos/panel.png"
+                    class="w-16 h-16 mx-auto">
+
+                <p class="mt-4 font-semibold">
+
+                    Energía Solar
+
+                </p>
+
+            </div>
+
+            <div class="bg-white/10 rounded-3xl p-6">
+
+                <img src="img/iconos/motor.png"
+                    class="w-16 h-16 mx-auto">
+
+                <p class="mt-4 font-semibold">
+
+                    Motor Eléctrico
+
+                </p>
+
+            </div>
+
+            <div class="bg-white/10 rounded-3xl p-6">
+
+                <img src="img/iconos/cinta.png"
+                    class="w-16 h-16 mx-auto">
+
+                <p class="mt-4 font-semibold">
+
+                    Sistema Recolector
+
+                </p>
+
+            </div>
+
+            <div class="bg-white/10 rounded-3xl p-6">
+
+                <img src="img/iconos/rio.png"
+                    class="w-16 h-16 mx-auto">
+
+                <p class="mt-4 font-semibold">
+
+                    Protección del Río
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ FOOTER =================-->
+
+<footer>
+
     <div class="footer-content">
 
-      <div class="footer-section">
-        <h4>Explorar</h4>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="problema.html">Problema</a></li>
-          <li><a href="solucion.html">Solución</a></li>
-          <li><a href="impacto.html">Impacto</a></li>
-        </ul>
-      </div>
+        <div class="footer-section">
 
-      <div class="footer-section">
-        <h4>Aprender</h4>
-        <ul>
-          <li><a href="investigacion.html">Investigación</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="acerca.html">Acerca de</a></li>
-        </ul>
-      </div>
+            <h4>Explorar</h4>
+
+            <ul>
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="problema.html">Problema</a></li>
+                <li><a href="solucion.html">Solución</a></li>
+                <li><a href="impacto.html">Impacto</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-section">
+
+            <h4>Aprender</h4>
+
+            <ul>
+
+                <li><a href="investigacion.html">Investigación</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+
+            </ul>
+
+        </div>
+
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; Feria de Ciencias 2026 - Instituto Privado Nuestra Señora del Rosario del Milagro.</p>
+
+        <p>
+
+            &copy; Feria de Ciencias 2026 - Instituto Privado Nuestra Señora del Rosario del Milagro.
+
+        </p>
+
     </div>
-  </footer>
 
-  <script src="data.js"></script>
+</footer>
+
+<script src="data.js"></script>
+
 </body>
+
 </html>
-
-
-
