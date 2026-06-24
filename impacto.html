@@ -9,352 +9,103 @@
     <title>EcoBoat Suquía | Impacto</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 
 </head>
 
-<body class="bg-slate-50 text-slate-800">
+<body class="min-h-screen bg-surface text-slate-900">
 
-<!--================ NAVBAR =================-->
+<!-- ================= HEADER ================= -->
 
 <header class="glass-nav fixed inset-x-0 top-0 z-50">
 
-<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
 
-<a href="index.html" class="flex items-center gap-3 text-base font-semibold text-primary">
+        <a href="index.html" class="flex items-center gap-3 text-base font-semibold text-primary">
 
-<span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary text-white">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary text-white">
 
-E
+                E
 
-</span>
+            </span>
 
-EcoBoat Suquía
+            EcoBoat Suquía
 
-</a>
+        </a>
 
-<button id="menu-toggle" class="inline-flex items-center justify-center rounded-full bg-white p-2 shadow sm:hidden">
+        <button id="menu-toggle" class="inline-flex items-center justify-center rounded-full bg-white/90 p-2 text-slate-700 shadow-sm ring-1 ring-slate-200 sm:hidden">
 
-☰
+            ☰
 
-</button>
+        </button>
 
-<nav id="nav-menu" class="hidden sm:flex sm:items-center sm:gap-6">
+        <nav id="nav-menu" class="hidden sm:flex sm:items-center sm:gap-6">
 
-<a href="index.html">Inicio</a>
-<a href="problema.html">Problema</a>
-<a href="solucion.html">Solución</a>
-<a href="investigacion.html">Investigación</a>
+            <a href="index.html" class="text-sm font-medium text-slate-700 hover:text-primary">Inicio</a>
 
-<a href="impacto.html" class="text-primary font-semibold">
+            <a href="problema.html" class="text-sm font-medium text-slate-700 hover:text-primary">Problema</a>
 
-Impacto
+            <a href="solucion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Solución</a>
 
-</a>
+            <a href="investigacion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Investigación</a>
 
-<a href="galeria.html">Galería</a>
-<a href="acerca.html">Acerca</a>
+            <a href="impacto.html" class="text-sm font-medium text-primary">Impacto</a>
 
-</nav>
+            <a href="galeria.html" class="text-sm font-medium text-slate-700 hover:text-primary">Galería</a>
 
-</div>
+            <a href="acerca.html" class="text-sm font-medium text-slate-700 hover:text-primary">Acerca</a>
+
+        </nav>
+
+    </div>
 
 </header>
 
+<!-- ================= MAIN ================= -->
+
 <main class="pt-24">
 
-<!--================ HERO =================-->
+<!-- HERO -->
 
-<section class="relative min-h-[90vh] flex items-center overflow-hidden">
+<section class="bg-surface2 py-20">
 
-<img src="img/impacto-hero.jpg"
-class="absolute inset-0 h-full w-full object-cover">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-<div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/70 to-transparent"></div>
+        <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
 
-<div class="relative max-w-7xl mx-auto px-6">
+            <div>
 
-<div class="grid lg:grid-cols-2 gap-16 items-center">
+                <span class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">
 
-<div>
+                    Impacto
 
-<span class="inline-flex rounded-full bg-green-500/20 border border-green-400 px-5 py-2 text-green-200 uppercase tracking-[.3em]">
+                </span>
 
-Impacto
+                <h1 class="mt-6 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
 
-</span>
+                    Un proyecto que busca generar un cambio positivo
 
-<h1 class="mt-8 text-6xl font-extrabold text-white leading-tight">
+                </h1>
 
-Un pequeño barco
+                <p class="mt-6 text-lg leading-8 text-slate-700">
 
-<span class="text-green-400">
+                    EcoBoat Suquía fue pensado para contribuir a la limpieza del río mediante una solución sustentable. Su implementación permitiría disminuir la presencia de residuos flotantes, proteger el ecosistema y promover el uso de tecnologías limpias para el cuidado del ambiente.
 
-puede generar un gran cambio
-
-</span>
-
-</h1>
-
-<p class="mt-8 text-xl leading-9 text-slate-200 max-w-2xl">
-
-EcoBoat Suquía busca disminuir la cantidad de residuos flotantes del río mediante una solución sustentable que protege el ambiente, favorece la biodiversidad y promueve el compromiso de la comunidad con el cuidado del agua.
-
-</p>
-
-</div>
-
-<div class="hidden lg:flex justify-end">
-
-<img src="img/barco-impacto.png"
-
-class="rounded-[35px] shadow-2xl max-w-lg w-full">
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!--================ ANTES Y DESPUÉS =================-->
-
-<section class="py-24 bg-white">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="text-center">
-
-<p class="uppercase tracking-[.3em] text-green-700 font-semibold">
-
-COMPARACIÓN
-
-</p>
-
-<h2 class="mt-4 text-5xl font-bold">
-
-Antes y después
-
-</h2>
-
-<p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">
-
-La implementación de EcoBoat Suquía busca reducir los residuos flotantes y contribuir a la recuperación del ecosistema del río.
-
-</p>
-
-</div>
-
-<div class="grid lg:grid-cols-2 gap-10 mt-20">
-
-<!-- ANTES -->
-
-<div class="rounded-3xl overflow-hidden shadow-xl bg-white hover:-translate-y-2 duration-300">
-
-<img src="img/rio-contaminado.jpg"
-
-class="h-80 w-full object-cover">
-
-<div class="p-8">
-
-<h3 class="text-3xl font-bold text-red-600">
-
-Antes
-
-</h3>
-
-<p class="mt-5 text-slate-600">
-
-La acumulación de residuos afecta el paisaje, perjudica la calidad del agua y pone en riesgo la fauna y la flora del río.
-
-</p>
-
-<ul class="mt-8 space-y-4">
-
-<li>• Acumulación de plásticos.</li>
-
-<li>• Contaminación visual.</li>
-
-<li>• Riesgo para los animales.</li>
-
-<li>• Deterioro del ecosistema.</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<!-- DESPUÉS -->
-
-<div class="rounded-3xl overflow-hidden shadow-xl bg-white hover:-translate-y-2 duration-300">
-
-<img src="img/rio-limpio.jpg"
-
-class="h-80 w-full object-cover">
-
-<div class="p-8">
-
-<h3 class="text-3xl font-bold text-green-700">
-
-Después
-
-</h3>
-
-<p class="mt-5 text-slate-600">
-
-Con la recolección de residuos flotantes se favorece la conservación del río y se mejora la calidad del ambiente.
-
-</p>
-
-<ul class="mt-8 space-y-4">
-
-<li>• Menor cantidad de residuos.</li>
-
-<li>• Mejor aspecto del río.</li>
-
-<li>• Protección de la biodiversidad.</li>
-
-<li>• Mayor conciencia ambiental.</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!--================ IMPACTO AMBIENTAL =================-->
-
-<section class="py-24 bg-slate-100">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="text-center">
-
-<p class="uppercase tracking-[.3em] text-green-700 font-semibold">
-
-IMPACTO AMBIENTAL
-
-</p>
-
-<h2 class="mt-4 text-5xl font-bold">
-
-Beneficios para el ecosistema
-
-</h2>
-
-<p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">
-
-La reducción de residuos favorece la conservación del río y de todos los organismos que dependen de él.
-
-</p>
-
-</div>
-
-<div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-20">
-
-<div class="rounded-3xl bg-white shadow-lg overflow-hidden">
-
-<img src="img/fauna.jpg"
-
-class="h-52 w-full object-cover">
-
-<div class="p-6">
-
-<h3 class="text-2xl font-bold">
-
-Fauna
-
-</h3>
-
-<p class="mt-4 text-slate-600">
-
-Disminuye el riesgo que representan los residuos para peces, aves y otros animales.
-
-</p>
-
-</div>
-
-</div>
-            <!-- FLORA -->
-
-            <div class="rounded-3xl bg-white shadow-lg overflow-hidden hover:-translate-y-2 duration-300">
-
-                <img src="img/flora.jpg"
-                    class="h-52 w-full object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-2xl font-bold">
-
-                        Flora
-
-                    </h3>
-
-                    <p class="mt-4 text-slate-600">
-
-                        Un río con menos residuos permite que las plantas acuáticas y la vegetación de sus orillas crezcan en mejores condiciones.
-
-                    </p>
-
-                </div>
+                </p>
 
             </div>
 
-            <!-- AGUA -->
+            <div>
 
-            <div class="rounded-3xl bg-white shadow-lg overflow-hidden hover:-translate-y-2 duration-300">
+                <img src="img/impacto-hero.jpg"
 
-                <img src="img/agua.jpg"
-                    class="h-52 w-full object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-2xl font-bold">
-
-                        Calidad del agua
-
-                    </h3>
-
-                    <p class="mt-4 text-slate-600">
-
-                        La disminución de residuos flotantes ayuda a conservar el agua y favorece un ambiente más saludable para todos.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-            <!-- ECOSISTEMA -->
-
-            <div class="rounded-3xl bg-white shadow-lg overflow-hidden hover:-translate-y-2 duration-300">
-
-                <img src="img/ecosistema.jpg"
-                    class="h-52 w-full object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-2xl font-bold">
-
-                        Ecosistema
-
-                    </h3>
-
-                    <p class="mt-4 text-slate-600">
-
-                        Mantener limpio el río contribuye al equilibrio natural entre la fauna, la flora y el ambiente que los rodea.
-
-                    </p>
-
-                </div>
+                    class="rounded-4xl shadow-xl w-full h-[430px] object-cover">
 
             </div>
 
@@ -364,52 +115,95 @@ Disminuye el riesgo que representan los residuos para peces, aves y otros animal
 
 </section>
 
-<!--================ IMPACTO SOCIAL =================-->
+<!-- IMPACTO AMBIENTAL -->
 
-<section class="py-24 bg-white">
+<section class="py-20">
 
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        <div class="text-center">
+        <div class="grid gap-14 lg:grid-cols-2 items-center">
 
-            <p class="uppercase tracking-[.3em] text-green-700 font-semibold">
+            <div>
 
-                IMPACTO SOCIAL
+                <img src="img/rio-limpio.jpg"
 
-            </p>
+                    class="rounded-4xl shadow-xl w-full">
 
-            <h2 class="mt-4 text-5xl font-bold">
+            </div>
 
-                Un proyecto para toda la comunidad
+            <div>
 
-            </h2>
+                <span class="inline-flex rounded-full bg-green-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-green-700">
 
-            <p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">
+                    Impacto ambiental
 
-                Además de contribuir al cuidado del ambiente, EcoBoat Suquía busca generar conciencia sobre la importancia de proteger los recursos naturales.
+                </span>
 
-            </p>
+                <h2 class="mt-5 text-4xl font-semibold">
+
+                    Cuidar el río es proteger todo su ecosistema
+
+                </h2>
+
+                <p class="mt-6 text-lg leading-8 text-slate-700">
+
+                    La recolección de residuos flotantes evita que muchos desechos continúen recorriendo el cauce del río. Esto ayuda a conservar la calidad del agua y disminuye los riesgos para los organismos que habitan el ecosistema.
+
+                </p>
+
+                <p class="mt-5 text-lg leading-8 text-slate-700">
+
+                    Además, al funcionar mediante energía solar, el EcoBoat no genera emisiones contaminantes durante su funcionamiento.
+
+                </p>
+
+            </div>
 
         </div>
 
-        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-20">
+    </div>
 
-            <article class="bg-slate-50 rounded-3xl shadow-lg overflow-hidden hover:-translate-y-2 duration-300">
+</section>
 
-                <img src="img/comunidad.jpg"
-                    class="h-56 w-full object-cover">
+<!-- BENEFICIOS -->
+
+<section class="bg-surface2 py-20">
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center">
+
+            <span class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">
+
+                Beneficios
+
+            </span>
+
+            <h2 class="mt-6 text-4xl font-semibold text-slate-950">
+
+                Beneficios que aporta el proyecto
+
+            </h2>
+
+        </div>
+
+        <div class="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+            <article class="rounded-3xl border border-slate-200 bg-white overflow-hidden shadow-lg">
+
+                <img src="img/agua.jpg" class="h-52 w-full object-cover">
 
                 <div class="p-6">
 
-                    <h3 class="text-2xl font-bold">
+                    <h3 class="text-xl font-semibold">
 
-                        Comunidad
+                        Agua más limpia
 
                     </h3>
 
-                    <p class="mt-4 text-slate-600">
+                    <p class="mt-4 text-slate-700">
 
-                        Promueve el compromiso ciudadano con el cuidado del río.
+                        Reduce la acumulación de residuos flotantes en el río.
 
                     </p>
 
@@ -417,22 +211,127 @@ Disminuye el riesgo que representan los residuos para peces, aves y otros animal
 
             </article>
 
-            <article class="bg-slate-50 rounded-3xl shadow-lg overflow-hidden hover:-translate-y-2 duration-300">
+            <article class="rounded-3xl border border-slate-200 bg-white overflow-hidden shadow-lg">
+
+                <img src="img/fauna.jpg" class="h-52 w-full object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-semibold">
+
+                        Protección de la fauna
+
+                    </h3>
+
+                    <p class="mt-4 text-slate-700">
+
+                        Disminuye los riesgos para peces, aves y otras especies.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="rounded-3xl border border-slate-200 bg-white overflow-hidden shadow-lg">
+
+                <img src="img/energia.jpg" class="h-52 w-full object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-semibold">
+
+                        Energía renovable
+
+                    </h3>
+
+                    <p class="mt-4 text-slate-700">
+
+                        Funciona utilizando energía solar, sin combustibles fósiles.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="rounded-3xl border border-slate-200 bg-white overflow-hidden shadow-lg">
+
+                <img src="img/comunidad.jpg" class="h-52 w-full object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-semibold">
+
+                        Conciencia ambiental
+
+                    </h3>
+
+                    <p class="mt-4 text-slate-700">
+
+                        Incentiva el compromiso de la comunidad con el cuidado del río.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= IMPACTO A LARGO PLAZO ================= -->
+
+<section class="py-20">
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center">
+
+            <span class="inline-flex rounded-full bg-green-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-green-700">
+
+                Proyección
+
+            </span>
+
+            <h2 class="mt-6 text-4xl font-semibold text-slate-950">
+
+                Un impacto que va más allá del río
+
+            </h2>
+
+            <p class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
+
+                Además de contribuir a la limpieza del río Suquía, el proyecto busca
+                generar conciencia ambiental y demostrar que la ciencia puede ofrecer
+                soluciones concretas para los problemas de nuestra comunidad.
+
+            </p>
+
+        </div>
+
+        <div class="mt-16 grid gap-8 md:grid-cols-2">
+
+            <article class="overflow-hidden rounded-4xl border border-slate-200 bg-white shadow-lg">
 
                 <img src="img/educacion.jpg"
-                    class="h-56 w-full object-cover">
+                     class="h-72 w-full object-cover">
 
-                <div class="p-6">
+                <div class="p-8">
 
-                    <h3 class="text-2xl font-bold">
+                    <h3 class="text-2xl font-semibold">
 
-                        Educación
+                        Impacto educativo
 
                     </h3>
 
-                    <p class="mt-4 text-slate-600">
+                    <p class="mt-4 leading-8 text-slate-700">
 
-                        Incentiva el aprendizaje sobre energías renovables y sostenibilidad.
+                        El proyecto demuestra cómo la física, la ingeniería y las
+                        ciencias ambientales pueden integrarse para resolver un
+                        problema real mediante la investigación y el trabajo en equipo.
 
                     </p>
 
@@ -440,45 +339,24 @@ Disminuye el riesgo que representan los residuos para peces, aves y otros animal
 
             </article>
 
-            <article class="bg-slate-50 rounded-3xl shadow-lg overflow-hidden hover:-translate-y-2 duration-300">
+            <article class="overflow-hidden rounded-4xl border border-slate-200 bg-white shadow-lg">
 
-                <img src="img/trabajo-equipo.jpg"
-                    class="h-56 w-full object-cover">
+                <img src="img/comunidad-impacto.jpg"
+                     class="h-72 w-full object-cover">
 
-                <div class="p-6">
+                <div class="p-8">
 
-                    <h3 class="text-2xl font-bold">
+                    <h3 class="text-2xl font-semibold">
 
-                        Trabajo en equipo
-
-                    </h3>
-
-                    <p class="mt-4 text-slate-600">
-
-                        Integra conocimientos científicos y tecnológicos para resolver un problema ambiental.
-
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article class="bg-slate-50 rounded-3xl shadow-lg overflow-hidden hover:-translate-y-2 duration-300">
-
-                <img src="img/futuro.jpg"
-                    class="h-56 w-full object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-2xl font-bold">
-
-                        Futuro sostenible
+                        Impacto social
 
                     </h3>
 
-                    <p class="mt-4 text-slate-600">
+                    <p class="mt-4 leading-8 text-slate-700">
 
-                        Demuestra que la innovación puede generar soluciones para proteger los ecosistemas.
+                        Promueve el compromiso de la comunidad con el cuidado del río,
+                        incentivando hábitos responsables y una mayor conciencia sobre
+                        la importancia de proteger el ambiente.
 
                     </p>
 
@@ -492,232 +370,198 @@ Disminuye el riesgo que representan los residuos para peces, aves y otros animal
 
 </section>
 
-<!--================ PROYECCIÓN =================-->
+<!-- ================= RESULTADOS ESPERADOS ================= -->
 
-<section class="py-24 bg-slate-100">
+<section class="bg-surface2 py-20">
 
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <div class="text-center">
 
-            <p class="uppercase tracking-[.3em] text-green-700 font-semibold">
+            <span class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">
 
-                PROYECCIÓN
+                Resultados esperados
 
-            </p>
+            </span>
 
-            <h2 class="mt-4 text-5xl font-bold">
+            <h2 class="mt-6 text-4xl font-semibold text-slate-950">
 
-                Mirando hacia el futuro
+                ¿Qué esperamos lograr?
 
             </h2>
 
-            <p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">
+        </div>
 
-                EcoBoat Suquía puede convertirse en un modelo para futuras iniciativas orientadas a la limpieza y conservación de otros cursos de agua.
+        <div class="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+            <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg text-center">
+
+                <img src="img/iconos/basura.png"
+                     class="mx-auto h-16 w-16 object-contain">
+
+                <h3 class="mt-5 text-xl font-semibold">
+
+                    Menos residuos
+
+                </h3>
+
+                <p class="mt-4 text-slate-700">
+
+                    Disminuir la basura flotante presente en el río.
+
+                </p>
+
+            </article>
+
+            <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg text-center">
+
+                <img src="img/iconos/ecosistema.png"
+                     class="mx-auto h-16 w-16 object-contain">
+
+                <h3 class="mt-5 text-xl font-semibold">
+
+                    Ecosistema protegido
+
+                </h3>
+
+                <p class="mt-4 text-slate-700">
+
+                    Favorecer la conservación de la fauna y la flora del río.
+
+                </p>
+
+            </article>
+
+            <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg text-center">
+
+                <img src="img/iconos/energia-verde.png"
+                     class="mx-auto h-16 w-16 object-contain">
+
+                <h3 class="mt-5 text-xl font-semibold">
+
+                    Energía limpia
+
+                </h3>
+
+                <p class="mt-4 text-slate-700">
+
+                    Demostrar el potencial de las energías renovables.
+
+                </p>
+
+            </article>
+
+            <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg text-center">
+
+                <img src="img/iconos/futuro.png"
+                     class="mx-auto h-16 w-16 object-contain">
+
+                <h3 class="mt-5 text-xl font-semibold">
+
+                    Futuro sustentable
+
+                </h3>
+
+                <p class="mt-4 text-slate-700">
+
+                    Inspirar nuevas propuestas para el cuidado del ambiente.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CONCLUSIÓN ================= -->
+
+<section class="py-20">
+
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+
+        <div class="overflow-hidden rounded-4xl border border-slate-200 bg-white shadow-xl shadow-slate-200/40">
+
+            <div class="grid lg:grid-cols-2 items-center">
+
+                <img src="img/futuro-rio.jpg"
+                     alt="Río Suquía"
+                     class="h-full w-full object-cover min-h-[420px]">
+
+                <div class="p-10 lg:p-14">
+
+                    <span class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">
+
+                        Conclusión
+
+                    </span>
+
+                    <h2 class="mt-6 text-4xl font-semibold text-slate-950">
+
+                        Un pequeño proyecto con un gran impacto
+
+                    </h2>
+
+                    <p class="mt-6 text-lg leading-8 text-slate-700">
+
+                        EcoBoat Suquía demuestra que la ciencia, la tecnología y el
+                        compromiso ambiental pueden unirse para enfrentar un problema
+                        real. La incorporación de energías renovables y sistemas
+                        automatizados representa una alternativa sustentable para la
+                        limpieza del río.
+
+                    </p>
+
+                    <p class="mt-5 text-lg leading-8 text-slate-700">
+
+                        Más allá de la recolección de residuos, el proyecto busca
+                        inspirar a otras personas a desarrollar soluciones innovadoras
+                        que contribuyan al cuidado del ambiente y al bienestar de la
+                        comunidad.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FRASE FINAL -->
+
+<section class="pb-24">
+
+    <div class="mx-auto max-w-4xl px-4 text-center">
+
+        <div class="rounded-4xl bg-gradient-to-r from-green-700 to-sky-700 px-10 py-14 text-white shadow-xl">
+
+            <h2 class="text-3xl font-semibold">
+
+                "Cada acción para cuidar el río es un paso hacia un futuro más sostenible."
+
+            </h2>
+
+            <p class="mt-6 text-lg text-green-100">
+
+                EcoBoat Suquía propone una forma diferente de enfrentar la contaminación:
+                combinar innovación, energías renovables y compromiso con el ambiente.
 
             </p>
 
         </div>
 
-        <div class="grid md:grid-cols-5 gap-8 mt-20">
-
-            <div class="text-center">
-
-                <img src="img/iconos/idea.png"
-                    class="w-16 h-16 mx-auto">
-
-                <h3 class="font-bold mt-5">
-
-                    Idea
-
-                </h3>
-
-                <p class="mt-3 text-slate-600">
-
-                    Detectar el problema ambiental.
-
-                </p>
-
-            </div>
-
-            <div class="text-center">
-
-                <img src="img/iconos/diseno.png"
-                    class="w-16 h-16 mx-auto">
-
-                <h3 class="font-bold mt-5">
-
-                    Diseño
-
-                </h3>
-
-                <p class="mt-3 text-slate-600">
-
-                    Crear una solución sustentable.
-
-                </p>
-
-            </div>
-
-            <div class="text-center">
-
-                <img src="img/iconos/prototipo.png"
-                    class="w-16 h-16 mx-auto">
-
-                <h3 class="font-bold mt-5">
-
-                    Prototipo
-
-                </h3>
-
-                <p class="mt-3 text-slate-600">
-
-                    Construcción y pruebas del EcoBoat.
-
-                </p>
-
-            </div>
-
-            <div class="text-center">
-
-                <img src="img/iconos/rio.png"
-                    class="w-16 h-16 mx-auto">
-
-                <h3 class="font-bold mt-5">
-
-                    Implementación
-
-                </h3>
-
-                <p class="mt-3 text-slate-600">
-
-                    Aplicación en el río Suquía.
-
-                </p>
-
-            </div>
-
-            <div class="text-center">
-
-                <img src="img/iconos/planeta.png"
-                    class="w-16 h-16 mx-auto">
-
-                <h3 class="font-bold mt-5">
-
-                    Futuro
-
-                </h3>
-
-                <p class="mt-3 text-slate-600">
-
-                    Replicar la propuesta en otros ríos.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!--================ CONCLUSIÓN =================-->
-
-<section class="py-24 bg-gradient-to-r from-green-700 via-green-800 to-blue-900 text-white">
-
-    <div class="max-w-5xl mx-auto px-6 text-center">
-
-        <span class="inline-block rounded-full bg-white/10 px-6 py-2 uppercase tracking-[.25em]">
-
-            Conclusión
-
-        </span>
-
-        <h2 class="mt-8 text-5xl font-bold">
-
-            Un impacto que va más allá de la limpieza
-
-        </h2>
-
-        <p class="mt-10 text-xl leading-10 text-green-100">
-
-            EcoBoat Suquía no solo propone una solución tecnológica para retirar
-            residuos flotantes del río, sino que también busca generar conciencia
-            ambiental y demostrar que la ciencia y la innovación pueden contribuir
-            al cuidado de los recursos naturales.
-
-        </p>
-
-        <p class="mt-8 text-xl leading-10 text-green-100">
-
-            Cada acción orientada a proteger el río representa un paso hacia un
-            ambiente más saludable y un futuro más sustentable para toda la
-            comunidad.
-
-        </p>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-
-            <div class="bg-white/10 rounded-3xl p-6">
-
-                <img src="img/iconos/hoja.png"
-                    class="w-16 h-16 mx-auto">
-
-                <p class="mt-4 font-semibold">
-
-                    Ambiente
-
-                </p>
-
-            </div>
-
-            <div class="bg-white/10 rounded-3xl p-6">
-
-                <img src="img/iconos/rio.png"
-                    class="w-16 h-16 mx-auto">
-
-                <p class="mt-4 font-semibold">
-
-                    Río Suquía
-
-                </p>
-
-            </div>
-
-            <div class="bg-white/10 rounded-3xl p-6">
-
-                <img src="img/iconos/comunidad.png"
-                    class="w-16 h-16 mx-auto">
-
-                <p class="mt-4 font-semibold">
-
-                    Comunidad
-
-                </p>
-
-            </div>
-
-            <div class="bg-white/10 rounded-3xl p-6">
-
-                <img src="img/iconos/planeta.png"
-                    class="w-16 h-16 mx-auto">
-
-                <p class="mt-4 font-semibold">
-
-                    Futuro sostenible
-
-                </p>
-
-            </div>
-
-        </div>
-
     </div>
 
 </section>
 
-<!--================ FOOTER =================-->
+</main>
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
@@ -728,12 +572,10 @@ Disminuye el riesgo que representan los residuos para peces, aves y otros animal
             <h4>Explorar</h4>
 
             <ul>
-
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="problema.html">Problema</a></li>
                 <li><a href="solucion.html">Solución</a></li>
                 <li><a href="impacto.html">Impacto</a></li>
-
             </ul>
 
         </div>
@@ -743,11 +585,9 @@ Disminuye el riesgo que representan los residuos para peces, aves y otros animal
             <h4>Aprender</h4>
 
             <ul>
-
                 <li><a href="investigacion.html">Investigación</a></li>
                 <li><a href="galeria.html">Galería</a></li>
                 <li><a href="acerca.html">Acerca de</a></li>
-
             </ul>
 
         </div>
@@ -757,9 +597,7 @@ Disminuye el riesgo que representan los residuos para peces, aves y otros animal
     <div class="footer-bottom">
 
         <p>
-
             &copy; Feria de Ciencias 2026 - Instituto Privado Nuestra Señora del Rosario del Milagro.
-
         </p>
 
     </div>
@@ -769,5 +607,4 @@ Disminuye el riesgo que representan los residuos para peces, aves y otros animal
 <script src="data.js"></script>
 
 </body>
-
 </html>
