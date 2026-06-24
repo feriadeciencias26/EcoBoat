@@ -9,409 +9,194 @@
     <title>EcoBoat Suquía | Acerca de</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 
 </head>
 
-<body class="bg-slate-50 text-slate-800">
+<body class="min-h-screen bg-surface text-slate-900">
 
-<!--================ NAVBAR =================-->
+<!-- ================= HEADER ================= -->
 
 <header class="glass-nav fixed inset-x-0 top-0 z-50">
 
-<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
 
-<a href="index.html" class="flex items-center gap-3 text-base font-semibold text-primary">
+        <a href="index.html" class="flex items-center gap-3 text-base font-semibold text-primary">
 
-<span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary text-white">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary text-white">
+                E
+            </span>
 
-E
+            EcoBoat Suquía
 
-</span>
+        </a>
 
-EcoBoat Suquía
+        <button id="menu-toggle" class="inline-flex items-center justify-center rounded-full bg-white/90 p-2 text-slate-700 shadow-sm ring-1 ring-slate-200 sm:hidden">
+            ☰
+        </button>
 
-</a>
+        <nav id="nav-menu" class="hidden sm:flex sm:items-center sm:gap-6">
 
-<button id="menu-toggle" class="inline-flex items-center justify-center rounded-full bg-white p-2 shadow sm:hidden">
+            <a href="index.html" class="text-sm font-medium text-slate-700 hover:text-primary">Inicio</a>
 
-☰
+            <a href="problema.html" class="text-sm font-medium text-slate-700 hover:text-primary">Problema</a>
 
-</button>
+            <a href="solucion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Solución</a>
 
-<nav id="nav-menu" class="hidden sm:flex sm:items-center sm:gap-6">
+            <a href="investigacion.html" class="text-sm font-medium text-slate-700 hover:text-primary">Investigación</a>
 
-<a href="index.html">Inicio</a>
-<a href="problema.html">Problema</a>
-<a href="solucion.html">Solución</a>
-<a href="investigacion.html">Investigación</a>
-<a href="impacto.html">Impacto</a>
-<a href="galeria.html">Galería</a>
+            <a href="impacto.html" class="text-sm font-medium text-slate-700 hover:text-primary">Impacto</a>
 
-<a href="acerca.html" class="text-primary font-semibold">
+            <a href="galeria.html" class="text-sm font-medium text-slate-700 hover:text-primary">Galería</a>
 
-Acerca
+            <a href="acerca.html" class="text-sm font-medium text-primary">Acerca</a>
 
-</a>
+        </nav>
 
-</nav>
-
-</div>
+    </div>
 
 </header>
 
+<!-- ================= MAIN ================= -->
+
 <main class="pt-24">
 
-<!--================ HERO =================-->
+<!-- HERO -->
 
-<section class="relative min-h-[90vh] flex items-center overflow-hidden">
+<section class="bg-surface2 py-20">
 
-<img src="img/acerca-hero.jpg"
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-class="absolute inset-0 h-full w-full object-cover">
+        <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
 
-<div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/70 to-transparent"></div>
+            <div>
 
-<div class="relative max-w-7xl mx-auto px-6">
+                <span class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">
 
-<div class="grid lg:grid-cols-2 gap-16 items-center">
+                    Acerca del proyecto
 
-<div>
+                </span>
 
-<span class="inline-flex rounded-full bg-green-500/20 border border-green-400 px-5 py-2 text-green-200 uppercase tracking-[.3em]">
+                <h1 class="mt-6 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
 
-Acerca del proyecto
+                    Conociendo EcoBoat Suquía
 
-</span>
+                </h1>
 
-<h1 class="mt-8 text-6xl font-extrabold text-white leading-tight">
+                <p class="mt-6 text-lg leading-8 text-slate-700">
 
-Conociendo
+                    EcoBoat Suquía es un proyecto desarrollado para la Feria de Ciencias con el objetivo de aplicar conocimientos científicos y tecnológicos en la búsqueda de una solución sustentable para la contaminación del río Suquía. A través de la investigación, el diseño y el trabajo colaborativo, buscamos demostrar cómo la innovación puede contribuir al cuidado del ambiente.
 
-<span class="text-green-400">
+                </p>
 
-EcoBoat Suquía
+            </div>
 
-</span>
+            <div>
 
-</h1>
+                <img src="img/equipo.jpg"
+                     class="rounded-4xl shadow-xl w-full h-[430px] object-cover">
 
-<p class="mt-8 text-xl leading-9 text-slate-200 max-w-2xl">
+            </div>
 
-EcoBoat Suquía nació como una propuesta para aplicar los conocimientos adquiridos en distintas áreas de la ciencia y la tecnología al cuidado del ambiente. El proyecto busca demostrar que la innovación puede convertirse en una herramienta para proteger nuestros recursos naturales.
+        </div>
 
-</p>
-
-</div>
-
-<div class="hidden lg:flex justify-end">
-
-<img src="img/equipo.jpg"
-
-class="rounded-[35px] shadow-2xl max-w-lg w-full">
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<!--================ NUESTRO PROYECTO =================-->
+<!-- ================= EL EQUIPO ================= -->
 
-<section class="py-24 bg-white">
+<section class="py-20">
 
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="grid lg:grid-cols-2 gap-16 items-center">
-
-<div>
-
-<img src="img/proyecto.jpg"
-
-class="rounded-3xl shadow-xl">
-
-</div>
-
-<div>
-
-<p class="uppercase tracking-[.3em] text-green-700 font-semibold">
-
-NUESTRO PROYECTO
-
-</p>
-
-<h2 class="mt-4 text-5xl font-bold">
-
-¿Cómo surgió?
-
-</h2>
-
-<p class="mt-8 text-lg leading-9 text-slate-600">
-
-La contaminación del río Suquía motivó el desarrollo de una propuesta que integrara energías renovables, ingeniería y conciencia ambiental. A partir de la investigación y el trabajo colaborativo, diseñamos un prototipo capaz de recolectar residuos flotantes utilizando energía solar.
-
-</p>
-
-<p class="mt-6 text-lg leading-9 text-slate-600">
-
-El proyecto fue desarrollado para demostrar que la ciencia y la tecnología pueden ofrecer soluciones innovadoras a problemas reales de nuestra comunidad.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!--================ MISIÓN =================-->
-
-<section class="py-24 bg-slate-100">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="text-center">
-
-<p class="uppercase tracking-[.30em] text-green-700 font-semibold">
-
-NUESTRA MISIÓN
-
-</p>
-
-<h2 class="mt-4 text-5xl font-bold">
-
-¿Por qué hacemos este proyecto?
-
-</h2>
-
-<p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">
-
-Buscamos aplicar los conocimientos científicos para desarrollar soluciones sustentables que contribuyan al cuidado del ambiente y promuevan una mayor conciencia ecológica.
-
-</p>
-
-</div>
-
-<div class="grid md:grid-cols-3 gap-10 mt-20">
-
-<article class="bg-white rounded-3xl shadow-xl overflow-hidden hover:-translate-y-2 duration-300">
-
-<img src="img/ambiente.jpg"
-
-class="h-60 w-full object-cover">
-
-<div class="p-8">
-
-<h3 class="text-2xl font-bold">
-
-Cuidar el ambiente
-
-</h3>
-
-<p class="mt-5 text-slate-600">
-
-Proponer acciones concretas para reducir la contaminación del río Suquía.
-
-</p>
-
-</div>
-
-</article>
-
-<article class="bg-white rounded-3xl shadow-xl overflow-hidden hover:-translate-y-2 duration-300">
-
-<img src="img/innovacion.jpg"
-
-class="h-60 w-full object-cover">
-
-<div class="p-8">
-
-<h3 class="text-2xl font-bold">
-
-Innovar
-
-</h3>
-
-<p class="mt-5 text-slate-600">
-
-Aplicar la ingeniería y las energías renovables para resolver un problema ambiental.
-
-</p>
-
-</div>
-
-</article>
-
-<article class="bg-white rounded-3xl shadow-xl overflow-hidden hover:-translate-y-2 duration-300">
-
-<img src="img/aprendizaje.jpg"
-
-class="h-60 w-full object-cover">
-
-<div class="p-8">
-
-<h3 class="text-2xl font-bold">
-
-Aprender
-
-</h3>
-
-<p class="mt-5 text-slate-600">
-
-Integrar conocimientos científicos y tecnológicos mediante un proyecto real.
-
-</p>
-
-</div>
-
-</article>
-
-</div>
-
-</div>
-
-</section>
-<!--================ VALORES =================-->
-
-<section class="py-24 bg-white">
-
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <div class="text-center">
 
-            <p class="uppercase tracking-[.30em] text-green-700 font-semibold">
+            <span class="inline-flex rounded-full bg-green-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-green-700">
 
-                NUESTROS VALORES
+                Equipo de trabajo
 
-            </p>
+            </span>
 
-            <h2 class="mt-4 text-5xl font-bold">
+            <h2 class="mt-6 text-4xl font-semibold text-slate-950">
 
-                Los principios que nos representan
+                Integrantes del proyecto
 
             </h2>
 
-            <p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">
+            <p class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
 
-                Este proyecto se desarrolló con el compromiso de aplicar la ciencia y la tecnología para generar un impacto positivo en el ambiente.
+                Este proyecto fue realizado de manera colaborativa por estudiantes del Instituto Privado Nuestra Señora del Rosario del Milagro, con el acompañamiento del profesor responsable.
 
             </p>
 
         </div>
 
-        <div class="grid md:grid-cols-2 xl:grid-cols-5 gap-8 mt-20">
+        <div class="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-            <article class="bg-slate-50 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 duration-300">
+            <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg text-center">
 
-                <img src="img/sustentabilidad.jpg" class="h-56 w-full object-cover">
+                <img src="img/victoria.jpg" class="mx-auto h-32 w-32 rounded-full object-cover">
 
-                <div class="p-6">
+                <h3 class="mt-6 text-2xl font-semibold">Victoria Gros</h3>
 
-                    <h3 class="text-2xl font-bold">
-
-                        Sustentabilidad
-
-                    </h3>
-
-                    <p class="mt-4 text-slate-600">
-
-                        Promover soluciones que respeten el ambiente utilizando energías renovables.
-
-                    </p>
-
-                </div>
+                <p class="mt-3 text-slate-600">
+                    Integrante del proyecto
+                </p>
 
             </article>
 
-            <article class="bg-slate-50 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 duration-300">
+            <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg text-center">
 
-                <img src="img/equipo-trabajo.jpg" class="h-56 w-full object-cover">
+                <img src="img/julia.jpg" class="mx-auto h-32 w-32 rounded-full object-cover">
 
-                <div class="p-6">
+                <h3 class="mt-6 text-2xl font-semibold">Julia Fossi</h3>
 
-                    <h3 class="text-2xl font-bold">
-
-                        Trabajo en equipo
-
-                    </h3>
-
-                    <p class="mt-4 text-slate-600">
-
-                        Integrar ideas y conocimientos para alcanzar un objetivo común.
-
-                    </p>
-
-                </div>
+                <p class="mt-3 text-slate-600">
+                    Integrante del proyecto
+                </p>
 
             </article>
 
-            <article class="bg-slate-50 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 duration-300">
+            <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg text-center">
 
-                <img src="img/creatividad.jpg" class="h-56 w-full object-cover">
+                <img src="img/lola.jpg" class="mx-auto h-32 w-32 rounded-full object-cover">
 
-                <div class="p-6">
+                <h3 class="mt-6 text-2xl font-semibold">Lola Montoya</h3>
 
-                    <h3 class="text-2xl font-bold">
-
-                        Creatividad
-
-                    </h3>
-
-                    <p class="mt-4 text-slate-600">
-
-                        Buscar nuevas formas de resolver problemas ambientales.
-
-                    </p>
-
-                </div>
+                <p class="mt-3 text-slate-600">
+                    Integrante del proyecto
+                </p>
 
             </article>
 
-            <article class="bg-slate-50 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 duration-300">
+            <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg text-center">
 
-                <img src="img/ciencia.jpg" class="h-56 w-full object-cover">
+                <img src="img/delfina.jpg" class="mx-auto h-32 w-32 rounded-full object-cover">
 
-                <div class="p-6">
+                <h3 class="mt-6 text-2xl font-semibold">Delfina García</h3>
 
-                    <h3 class="text-2xl font-bold">
-
-                        Ciencia
-
-                    </h3>
-
-                    <p class="mt-4 text-slate-600">
-
-                        Basar cada decisión en conocimientos científicos y tecnológicos.
-
-                    </p>
-
-                </div>
+                <p class="mt-3 text-slate-600">
+                    Integrante del proyecto
+                </p>
 
             </article>
 
-            <article class="bg-slate-50 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 duration-300">
+            <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg text-center md:col-span-2 lg:col-span-1">
 
-                <img src="img/compromiso.jpg" class="h-56 w-full object-cover">
+                <img src="img/profesor.jpg" class="mx-auto h-32 w-32 rounded-full object-cover">
 
-                <div class="p-6">
+                <h3 class="mt-6 text-2xl font-semibold">Prof. Marcos González</h3>
 
-                    <h3 class="text-2xl font-bold">
-
-                        Compromiso
-
-                    </h3>
-
-                    <p class="mt-4 text-slate-600">
-
-                        Trabajar con responsabilidad para cuidar el río Suquía.
-
-                    </p>
-
-                </div>
+                <p class="mt-3 text-slate-600">
+                    Profesor orientador
+                </p>
 
             </article>
 
@@ -420,46 +205,50 @@ Integrar conocimientos científicos y tecnológicos mediante un proyecto real.
     </div>
 
 </section>
+<!-- ================= NUESTRA INSTITUCIÓN ================= -->
 
-<!--================ INSTITUCIÓN =================-->
+<section class="bg-surface2 py-20">
 
-<section class="py-24 bg-slate-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="grid gap-14 lg:grid-cols-2 items-center">
 
             <div>
 
                 <img src="img/colegio.jpg"
-
-                    class="rounded-3xl shadow-xl">
+                     alt="Instituto"
+                     class="rounded-4xl shadow-xl w-full object-cover">
 
             </div>
 
             <div>
 
-                <p class="uppercase tracking-[.30em] text-green-700 font-semibold">
+                <span class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">
 
-                    INSTITUCIÓN
+                    Nuestra institución
 
-                </p>
+                </span>
 
-                <h2 class="mt-4 text-5xl font-bold">
+                <h2 class="mt-6 text-4xl font-semibold text-slate-950">
 
-                    Nuestro colegio
+                    Aprender investigando
 
                 </h2>
 
-                <p class="mt-8 text-lg leading-9 text-slate-600">
+                <p class="mt-6 text-lg leading-8 text-slate-700">
 
-                    El proyecto EcoBoat Suquía fue desarrollado en el marco de la Feria de Ciencias por estudiantes del Instituto Privado Nuestra Señora del Rosario del Milagro.
+                    EcoBoat Suquía fue desarrollado por estudiantes del
+                    <strong>Instituto Privado Nuestra Señora del Rosario del Milagro</strong>
+                    como parte de la Feria de Ciencias 2026.
 
                 </p>
 
-                <p class="mt-6 text-lg leading-9 text-slate-600">
+                <p class="mt-5 text-lg leading-8 text-slate-700">
 
-                    La institución promueve el aprendizaje basado en proyectos, incentivando la investigación, la creatividad y el compromiso con la comunidad.
+                    El proyecto representa la integración de conocimientos adquiridos
+                    durante la formación escolar, promoviendo la investigación, la
+                    creatividad y el compromiso con el cuidado del ambiente mediante
+                    una propuesta innovadora.
 
                 </p>
 
@@ -471,35 +260,296 @@ Integrar conocimientos científicos y tecnológicos mediante un proyecto real.
 
 </section>
 
-<!--================ FERIA =================-->
+<!-- ================= NUESTRO OBJETIVO ================= -->
 
-<section class="py-24 bg-gradient-to-r from-green-700 via-green-800 to-blue-900 text-white">
+<section class="py-20">
 
-    <div class="max-w-5xl mx-auto px-6 text-center">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        <span class="inline-block rounded-full bg-white/10 px-6 py-2 uppercase tracking-[.25em]">
+        <div class="text-center">
 
-            Feria de Ciencias 2026
+            <span class="inline-flex rounded-full bg-green-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-green-700">
 
-        </span>
+                Nuestro objetivo
 
-        <h2 class="mt-8 text-5xl font-bold">
+            </span>
 
-            Ciencia, innovación y compromiso
+            <h2 class="mt-6 text-4xl font-semibold text-slate-950">
 
-        </h2>
+                Ciencia para cuidar el ambiente
 
-        <p class="mt-10 text-xl leading-10 text-green-100">
+            </h2>
 
-            EcoBoat Suquía representa el trabajo colaborativo, la aplicación de conocimientos científicos y el compromiso con el cuidado del ambiente. Este proyecto demuestra que la investigación y la innovación pueden generar soluciones para los desafíos de nuestra comunidad.
+            <p class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
 
-        </p>
+                El propósito del proyecto es desarrollar una alternativa sustentable
+                para reducir la contaminación del río Suquía mediante el uso de
+                energías renovables y un sistema automatizado de recolección de
+                residuos flotantes.
+
+            </p>
+
+        </div>
+
+        <div class="mt-16 grid gap-8 md:grid-cols-3">
+
+            <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg">
+
+                <img src="img/innovacion.jpg"
+                     class="h-48 w-full rounded-2xl object-cover">
+
+                <h3 class="mt-6 text-2xl font-semibold">
+
+                    Innovación
+
+                </h3>
+
+                <p class="mt-4 text-slate-700 leading-7">
+
+                    Diseñar una solución tecnológica que contribuya a la limpieza
+                    del río utilizando energía solar.
+
+                </p>
+
+            </article>
+
+            <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg">
+
+                <img src="img/sustentabilidad.jpg"
+                     class="h-48 w-full rounded-2xl object-cover">
+
+                <h3 class="mt-6 text-2xl font-semibold">
+
+                    Sustentabilidad
+
+                </h3>
+
+                <p class="mt-4 text-slate-700 leading-7">
+
+                    Promover el uso de energías renovables para reducir el impacto
+                    ambiental y proteger los recursos naturales.
+
+                </p>
+
+            </article>
+
+            <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg">
+
+                <img src="img/trabajo-equipo.jpg"
+                     class="h-48 w-full rounded-2xl object-cover">
+
+                <h3 class="mt-6 text-2xl font-semibold">
+
+                    Trabajo colaborativo
+
+                </h3>
+
+                <p class="mt-4 text-slate-700 leading-7">
+
+                    Integrar conocimientos científicos y tecnológicos mediante el
+                    esfuerzo conjunto de estudiantes y docentes.
+
+                </p>
+
+            </article>
+
+        </div>
 
     </div>
 
 </section>
 
-<!--================ FOOTER =================-->
+<!-- ================= VALORES ================= -->
+
+<section class="bg-surface2 py-20">
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center">
+
+            <span class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">
+
+                Valores
+
+            </span>
+
+            <h2 class="mt-6 text-4xl font-semibold text-slate-950">
+
+                Lo que representa EcoBoat Suquía
+
+            </h2>
+
+        </div>
+
+        <div class="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+            <article class="rounded-3xl bg-white border border-slate-200 p-8 shadow-lg text-center">
+
+                <img src="img/iconos/ciencia.png"
+                     class="mx-auto h-16 w-16 object-contain">
+
+                <h3 class="mt-5 text-xl font-semibold">
+
+                    Ciencia
+
+                </h3>
+
+                <p class="mt-4 text-slate-700">
+
+                    Investigar para comprender y resolver problemas reales.
+
+                </p>
+
+            </article>
+
+            <article class="rounded-3xl bg-white border border-slate-200 p-8 shadow-lg text-center">
+
+                <img src="img/iconos/ambiente.png"
+                     class="mx-auto h-16 w-16 object-contain">
+
+                <h3 class="mt-5 text-xl font-semibold">
+
+                    Ambiente
+
+                </h3>
+
+                <p class="mt-4 text-slate-700">
+
+                    Promover el cuidado y la conservación del río Suquía.
+
+                </p>
+
+            </article>
+
+            <article class="rounded-3xl bg-white border border-slate-200 p-8 shadow-lg text-center">
+
+                <img src="img/iconos/ideas.png"
+                     class="mx-auto h-16 w-16 object-contain">
+
+                <h3 class="mt-5 text-xl font-semibold">
+
+                    Creatividad
+
+                </h3>
+
+                <p class="mt-4 text-slate-700">
+
+                    Buscar nuevas soluciones mediante la innovación.
+
+                </p>
+
+            </article>
+
+            <article class="rounded-3xl bg-white border border-slate-200 p-8 shadow-lg text-center">
+
+                <img src="img/iconos/equipo.png"
+                     class="mx-auto h-16 w-16 object-contain">
+
+                <h3 class="mt-5 text-xl font-semibold">
+
+                    Compromiso
+
+                </h3>
+
+                <p class="mt-4 text-slate-700">
+
+                    Trabajar con responsabilidad para generar un impacto positivo.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CIERRE ================= -->
+
+<section class="py-20">
+
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+
+        <div class="overflow-hidden rounded-4xl border border-slate-200 bg-white shadow-xl shadow-slate-200/40">
+
+            <div class="grid lg:grid-cols-2 items-center">
+
+                <img src="img/feria-ciencias.jpg"
+                     alt="Feria de Ciencias"
+                     class="h-full w-full min-h-[420px] object-cover">
+
+                <div class="p-10 lg:p-14">
+
+                    <span class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">
+
+                        Nuestra experiencia
+
+                    </span>
+
+                    <h2 class="mt-6 text-4xl font-semibold text-slate-950">
+
+                        Aprender haciendo
+
+                    </h2>
+
+                    <p class="mt-6 text-lg leading-8 text-slate-700">
+
+                        El desarrollo de EcoBoat Suquía nos permitió aplicar conocimientos
+                        de Física, Ingeniería Mecánica, Ingeniería Eléctrica y Ciencias
+                        Ambientales para resolver un problema real de nuestra comunidad.
+
+                    </p>
+
+                    <p class="mt-5 text-lg leading-8 text-slate-700">
+
+                        Más allá del prototipo, este proyecto fortaleció el trabajo en
+                        equipo, la investigación y el compromiso con el cuidado del
+                        ambiente, demostrando que la innovación puede generar cambios
+                        positivos.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= AGRADECIMIENTO ================= -->
+
+<section class="pb-24">
+
+    <div class="mx-auto max-w-5xl px-4">
+
+        <div class="rounded-4xl bg-gradient-to-r from-green-700 to-sky-700 p-12 text-center text-white shadow-xl">
+
+            <h2 class="text-4xl font-semibold">
+
+                Gracias por conocer EcoBoat Suquía
+
+            </h2>
+
+            <p class="mt-8 text-lg leading-8 text-green-100">
+
+                Esperamos que este proyecto inspire nuevas ideas para proteger nuestros
+                recursos naturales y demuestre que la ciencia, la tecnología y el trabajo
+                colaborativo pueden construir un futuro más sustentable.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
